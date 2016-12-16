@@ -1,64 +1,84 @@
 
 package agh.cs.lab9.json.representative.spendings;
 
+import java.util.HashMap;
 import java.util.List;
-import com.google.gson.annotations.Expose;
-import com.google.gson.annotations.SerializedName;
+import java.util.Map;
+import org.codehaus.jackson.annotate.JsonAnyGetter;
+import org.codehaus.jackson.annotate.JsonAnySetter;
+import org.codehaus.jackson.annotate.JsonIgnore;
+import org.codehaus.jackson.annotate.JsonProperty;
+import org.codehaus.jackson.annotate.JsonPropertyOrder;
+import org.codehaus.jackson.map.annotate.JsonSerialize;
 
+@JsonSerialize(include = JsonSerialize.Inclusion.NON_NULL)
+@JsonPropertyOrder({
+    "liczba_pol",
+    "liczba_rocznikow",
+    "punkty",
+    "roczniki"
+})
 public class Wydatki {
 
-    @SerializedName("liczba_pol")
-    @Expose
+    @JsonProperty("liczba_pol")
     private Integer liczbaPol;
-    @SerializedName("liczba_rocznikow")
-    @Expose
+    @JsonProperty("liczba_rocznikow")
     private Integer liczbaRocznikow;
-    @SerializedName("punkty")
-    @Expose
+    @JsonProperty("punkty")
     private List<Punkty> punkty = null;
-    @SerializedName("roczniki")
-    @Expose
+    @JsonProperty("roczniki")
     private List<Roczniki> roczniki = null;
+    @JsonIgnore
+    private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
+    @JsonProperty("liczba_pol")
     public Integer getLiczbaPol() {
         return liczbaPol;
     }
 
+    @JsonProperty("liczba_pol")
     public void setLiczbaPol(Integer liczbaPol) {
         this.liczbaPol = liczbaPol;
     }
 
+    @JsonProperty("liczba_rocznikow")
     public Integer getLiczbaRocznikow() {
         return liczbaRocznikow;
     }
 
+    @JsonProperty("liczba_rocznikow")
     public void setLiczbaRocznikow(Integer liczbaRocznikow) {
         this.liczbaRocznikow = liczbaRocznikow;
     }
 
+    @JsonProperty("punkty")
     public List<Punkty> getPunkty() {
         return punkty;
     }
 
+    @JsonProperty("punkty")
     public void setPunkty(List<Punkty> punkty) {
         this.punkty = punkty;
     }
 
+    @JsonProperty("roczniki")
     public List<Roczniki> getRoczniki() {
         return roczniki;
     }
 
+    @JsonProperty("roczniki")
     public void setRoczniki(List<Roczniki> roczniki) {
         this.roczniki = roczniki;
     }
 
-    @Override
-    public String toString() {
-        return "Wydatki{" +
-                "liczbaPol=" + liczbaPol +
-                ", liczbaRocznikow=" + liczbaRocznikow +
-                ", punkty=" + punkty +
-                ", roczniki=" + roczniki +
-                '}';
+    @JsonAnyGetter
+    public Map<String, Object> getAdditionalProperties() {
+        return this.additionalProperties;
     }
+
+    @JsonAnySetter
+    public void setAdditionalProperty(String name, Object value) {
+        this.additionalProperties.put(name, value);
+    }
+
 }

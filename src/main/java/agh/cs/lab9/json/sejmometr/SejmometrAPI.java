@@ -1,97 +1,84 @@
 
 package agh.cs.lab9.json.sejmometr;
 
-import agh.cs.lab9.json.AbstractAPI;
-import com.google.gson.annotations.Expose;
-import com.google.gson.annotations.SerializedName;
-
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+import org.codehaus.jackson.annotate.JsonAnyGetter;
+import org.codehaus.jackson.annotate.JsonAnySetter;
+import org.codehaus.jackson.annotate.JsonIgnore;
+import org.codehaus.jackson.annotate.JsonProperty;
+import org.codehaus.jackson.annotate.JsonPropertyOrder;
+import org.codehaus.jackson.map.annotate.JsonSerialize;
 
-public class SejmometrAPI extends AbstractAPI{
+@JsonSerialize(include = JsonSerialize.Inclusion.NON_NULL)
+@JsonPropertyOrder({
+    "Dataobject",
+    "Count",
+    "Took",
+    "Links"
+})
+public class SejmometrAPI {
 
-    @SerializedName("Dataobject")
-    @Expose
+    @JsonProperty("Dataobject")
     private List<Dataobject> dataobject = null;
-    @SerializedName("Count")
-    @Expose
+    @JsonProperty("Count")
     private Integer count;
-    @SerializedName("Took")
-    @Expose
+    @JsonProperty("Took")
     private Integer took;
-    @SerializedName("Links")
-    @Expose
+    @JsonProperty("Links")
     private Links links;
+    @JsonIgnore
+    private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
-    /**
-     * 
-     * @return
-     *     The dataobject
-     */
+    @JsonProperty("Dataobject")
     public List<Dataobject> getDataobject() {
         return dataobject;
     }
 
-    /**
-     * 
-     * @param dataobject
-     *     The Dataobject
-     */
+    @JsonProperty("Dataobject")
     public void setDataobject(List<Dataobject> dataobject) {
         this.dataobject = dataobject;
     }
 
-    /**
-     * 
-     * @return
-     *     The count
-     */
+    @JsonProperty("Count")
     public Integer getCount() {
         return count;
     }
 
-    /**
-     * 
-     * @param count
-     *     The Count
-     */
+    @JsonProperty("Count")
     public void setCount(Integer count) {
         this.count = count;
     }
 
-    /**
-     * 
-     * @return
-     *     The took
-     */
+    @JsonProperty("Took")
     public Integer getTook() {
         return took;
     }
 
-    /**
-     * 
-     * @param took
-     *     The Took
-     */
+    @JsonProperty("Took")
     public void setTook(Integer took) {
         this.took = took;
     }
 
-    /**
-     * 
-     * @return
-     *     The links
-     */
+    @JsonProperty("Links")
     public Links getLinks() {
         return links;
     }
 
-    /**
-     * 
-     * @param links
-     *     The Links
-     */
+    @JsonProperty("Links")
     public void setLinks(Links links) {
         this.links = links;
+    }
+
+    @JsonAnyGetter
+    public Map<String, Object> getAdditionalProperties() {
+        return this.additionalProperties;
+    }
+
+    @JsonAnySetter
+    public void setAdditionalProperty(String name, Object value) {
+        this.additionalProperties.put(name, value);
     }
 
     @Override
@@ -101,6 +88,7 @@ public class SejmometrAPI extends AbstractAPI{
                 ", count=" + count +
                 ", took=" + took +
                 ", links=" + links +
+                ", additionalProperties=" + additionalProperties +
                 '}';
     }
 }

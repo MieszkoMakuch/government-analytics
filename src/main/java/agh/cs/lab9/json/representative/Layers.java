@@ -1,103 +1,83 @@
 
 package agh.cs.lab9.json.representative;
 
-import com.google.gson.annotations.Expose;
-import com.google.gson.annotations.SerializedName;
+import java.util.HashMap;
+import java.util.Map;
+import org.codehaus.jackson.annotate.JsonAnyGetter;
+import org.codehaus.jackson.annotate.JsonAnySetter;
+import org.codehaus.jackson.annotate.JsonIgnore;
+import org.codehaus.jackson.annotate.JsonProperty;
+import org.codehaus.jackson.annotate.JsonPropertyOrder;
+import org.codehaus.jackson.map.annotate.JsonSerialize;
 
+@JsonSerialize(include = JsonSerialize.Inclusion.NON_NULL)
+@JsonPropertyOrder({
+    "dataset",
+    "channels",
+    "page",
+    "subscribers"
+})
 public class Layers {
 
-    @SerializedName("dataset")
-    @Expose
+    @JsonProperty("dataset")
     private Object dataset;
-    @SerializedName("channels")
-    @Expose
+    @JsonProperty("channels")
     private Object channels;
-    @SerializedName("page")
-    @Expose
+    @JsonProperty("page")
     private Object page;
-    @SerializedName("subscribers")
-    @Expose
+    @JsonProperty("subscribers")
     private Object subscribers;
+    @JsonIgnore
+    private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
-    /**
-     * 
-     * @return
-     *     The dataset
-     */
+    @JsonProperty("dataset")
     public Object getDataset() {
         return dataset;
     }
 
-    /**
-     * 
-     * @param dataset
-     *     The dataset
-     */
+    @JsonProperty("dataset")
     public void setDataset(Object dataset) {
         this.dataset = dataset;
     }
 
-    /**
-     * 
-     * @return
-     *     The channels
-     */
+    @JsonProperty("channels")
     public Object getChannels() {
         return channels;
     }
 
-    /**
-     * 
-     * @param channels
-     *     The channels
-     */
+    @JsonProperty("channels")
     public void setChannels(Object channels) {
         this.channels = channels;
     }
 
-    /**
-     * 
-     * @return
-     *     The page
-     */
+    @JsonProperty("page")
     public Object getPage() {
         return page;
     }
 
-    /**
-     * 
-     * @param page
-     *     The page
-     */
+    @JsonProperty("page")
     public void setPage(Object page) {
         this.page = page;
     }
 
-    /**
-     * 
-     * @return
-     *     The subscribers
-     */
+    @JsonProperty("subscribers")
     public Object getSubscribers() {
         return subscribers;
     }
 
-    /**
-     * 
-     * @param subscribers
-     *     The subscribers
-     */
+    @JsonProperty("subscribers")
     public void setSubscribers(Object subscribers) {
         this.subscribers = subscribers;
     }
 
-    @Override
-    public String toString() {
-        return "Layers{" +
-                "dataset=" + dataset +
-                ", channels=" + channels +
-                ", page=" + page +
-                ", subscribers=" + subscribers +
-                '}';
+    @JsonAnyGetter
+    public Map<String, Object> getAdditionalProperties() {
+        return this.additionalProperties;
     }
+
+    @JsonAnySetter
+    public void setAdditionalProperty(String name, Object value) {
+        this.additionalProperties.put(name, value);
+    }
+
 }

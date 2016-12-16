@@ -1,199 +1,148 @@
 
 package agh.cs.lab9.json.sejmometr;
 
-import com.google.gson.annotations.Expose;
-import com.google.gson.annotations.SerializedName;
+import java.util.HashMap;
+import java.util.Map;
+import org.codehaus.jackson.annotate.JsonAnyGetter;
+import org.codehaus.jackson.annotate.JsonAnySetter;
+import org.codehaus.jackson.annotate.JsonIgnore;
+import org.codehaus.jackson.annotate.JsonProperty;
+import org.codehaus.jackson.annotate.JsonPropertyOrder;
+import org.codehaus.jackson.map.annotate.JsonSerialize;
 
+@JsonSerialize(include = JsonSerialize.Inclusion.NON_NULL)
+@JsonPropertyOrder({
+    "id",
+    "dataset",
+    "url",
+    "mp_url",
+    "schema_url",
+    "global_id",
+    "slug",
+    "score",
+    "data"
+})
 public class Dataobject {
 
-    @SerializedName("id")
-    @Expose
+    @JsonProperty("id")
     private String id;
-    @SerializedName("dataset")
-    @Expose
+    @JsonProperty("dataset")
     private String dataset;
-    @SerializedName("url")
-    @Expose
+    @JsonProperty("url")
     private String url;
-    @SerializedName("mp_url")
-    @Expose
+    @JsonProperty("mp_url")
     private String mpUrl;
-    @SerializedName("schema_url")
-    @Expose
+    @JsonProperty("schema_url")
     private String schemaUrl;
-    @SerializedName("global_id")
-    @Expose
+    @JsonProperty("global_id")
     private String globalId;
-    @SerializedName("slug")
-    @Expose
+    @JsonProperty("slug")
     private String slug;
-    @SerializedName("score")
-    @Expose
+    @JsonProperty("score")
     private Object score;
-    @SerializedName("data")
-    @Expose
+    @JsonProperty("data")
     private Data data;
+    @JsonIgnore
+    private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
-    /**
-     * 
-     * @return
-     *     The id
-     */
+    @JsonProperty("id")
     public String getId() {
         return id;
     }
 
-    /**
-     * 
-     * @param id
-     *     The id
-     */
+    @JsonProperty("id")
     public void setId(String id) {
         this.id = id;
     }
 
-    /**
-     * 
-     * @return
-     *     The dataset
-     */
+    @JsonProperty("dataset")
     public String getDataset() {
         return dataset;
     }
 
-    /**
-     * 
-     * @param dataset
-     *     The dataset
-     */
+    @JsonProperty("dataset")
     public void setDataset(String dataset) {
         this.dataset = dataset;
     }
 
-    /**
-     * 
-     * @return
-     *     The url
-     */
+    @JsonProperty("url")
     public String getUrl() {
         return url;
     }
 
-    /**
-     * 
-     * @param url
-     *     The url
-     */
+    @JsonProperty("url")
     public void setUrl(String url) {
         this.url = url;
     }
 
-    /**
-     * 
-     * @return
-     *     The mpUrl
-     */
+    @JsonProperty("mp_url")
     public String getMpUrl() {
         return mpUrl;
     }
 
-    /**
-     * 
-     * @param mpUrl
-     *     The mp_url
-     */
+    @JsonProperty("mp_url")
     public void setMpUrl(String mpUrl) {
         this.mpUrl = mpUrl;
     }
 
-    /**
-     * 
-     * @return
-     *     The schemaUrl
-     */
+    @JsonProperty("schema_url")
     public String getSchemaUrl() {
         return schemaUrl;
     }
 
-    /**
-     * 
-     * @param schemaUrl
-     *     The schema_url
-     */
+    @JsonProperty("schema_url")
     public void setSchemaUrl(String schemaUrl) {
         this.schemaUrl = schemaUrl;
     }
 
-    /**
-     * 
-     * @return
-     *     The globalId
-     */
+    @JsonProperty("global_id")
     public String getGlobalId() {
         return globalId;
     }
 
-    /**
-     * 
-     * @param globalId
-     *     The global_id
-     */
+    @JsonProperty("global_id")
     public void setGlobalId(String globalId) {
         this.globalId = globalId;
     }
 
-    /**
-     * 
-     * @return
-     *     The slug
-     */
+    @JsonProperty("slug")
     public String getSlug() {
         return slug;
     }
 
-    /**
-     * 
-     * @param slug
-     *     The slug
-     */
+    @JsonProperty("slug")
     public void setSlug(String slug) {
         this.slug = slug;
     }
 
-    /**
-     * 
-     * @return
-     *     The score
-     */
+    @JsonProperty("score")
     public Object getScore() {
         return score;
     }
 
-    /**
-     * 
-     * @param score
-     *     The score
-     */
+    @JsonProperty("score")
     public void setScore(Object score) {
         this.score = score;
     }
 
-    /**
-     * 
-     * @return
-     *     The data
-     */
+    @JsonProperty("data")
     public Data getData() {
         return data;
     }
 
-    /**
-     * 
-     * @param data
-     *     The data
-     */
+    @JsonProperty("data")
     public void setData(Data data) {
         this.data = data;
+    }
+
+    @JsonAnyGetter
+    public Map<String, Object> getAdditionalProperties() {
+        return this.additionalProperties;
+    }
+
+    @JsonAnySetter
+    public void setAdditionalProperty(String name, Object value) {
+        this.additionalProperties.put(name, value);
     }
 
     @Override
@@ -208,6 +157,7 @@ public class Dataobject {
                 ", slug='" + slug + '\'' +
                 ", score=" + score +
                 ", data=" + data +
+                ", additionalProperties=" + additionalProperties +
                 '}';
     }
 }

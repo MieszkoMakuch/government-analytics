@@ -12,3 +12,4 @@ public class Sejmometr {
         this.sejmometrAPI = sejmometrAPI;
     }
 }
+

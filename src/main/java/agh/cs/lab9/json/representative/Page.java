@@ -1,52 +1,57 @@
 
 package agh.cs.lab9.json.representative;
 
-import com.google.gson.annotations.Expose;
-import com.google.gson.annotations.SerializedName;
+import java.util.HashMap;
+import java.util.Map;
+import org.codehaus.jackson.annotate.JsonAnyGetter;
+import org.codehaus.jackson.annotate.JsonAnySetter;
+import org.codehaus.jackson.annotate.JsonIgnore;
+import org.codehaus.jackson.annotate.JsonProperty;
+import org.codehaus.jackson.annotate.JsonPropertyOrder;
+import org.codehaus.jackson.map.annotate.JsonSerialize;
 
+@JsonSerialize(include = JsonSerialize.Inclusion.NON_NULL)
+@JsonPropertyOrder({
+    "doc_count",
+    "page"
+})
 public class Page {
 
-    @SerializedName("doc_count")
-    @Expose
+    @JsonProperty("doc_count")
     private Integer docCount;
-    @SerializedName("page")
-    @Expose
+    @JsonProperty("page")
     private Page_ page;
+    @JsonIgnore
+    private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
-    /**
-     * 
-     * @return
-     *     The docCount
-     */
+    @JsonProperty("doc_count")
     public Integer getDocCount() {
         return docCount;
     }
 
-    /**
-     * 
-     * @param docCount
-     *     The doc_count
-     */
+    @JsonProperty("doc_count")
     public void setDocCount(Integer docCount) {
         this.docCount = docCount;
     }
 
-    /**
-     * 
-     * @return
-     *     The page
-     */
+    @JsonProperty("page")
     public Page_ getPage() {
         return page;
     }
 
-    /**
-     * 
-     * @param page
-     *     The page
-     */
+    @JsonProperty("page")
     public void setPage(Page_ page) {
         this.page = page;
+    }
+
+    @JsonAnyGetter
+    public Map<String, Object> getAdditionalProperties() {
+        return this.additionalProperties;
+    }
+
+    @JsonAnySetter
+    public void setAdditionalProperty(String name, Object value) {
+        this.additionalProperties.put(name, value);
     }
 
 }
