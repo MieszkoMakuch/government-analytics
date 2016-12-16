@@ -1,6 +1,7 @@
 package agh.cs.lab9.json;
 
 import agh.cs.lab9.Representative;
+import agh.cs.lab9.RepresentativeWithTrips;
 import agh.cs.lab9.json.representative.RepresentativeAPI;
 import agh.cs.lab9.json.representative.spendings.RepresentativeSpendingsAPI;
 import agh.cs.lab9.json.representative.trips.RepresentativeTripsAPI;
@@ -35,11 +36,9 @@ public class RepresentativeCreator extends AbstractCreator {
 
     public Representative createRepresentative() {
         String jsonRepresentativeAPI = null;
-        String jsonRepresentativeTripsAPI = null;
         String jsonRepresentativeSpendingsAPI = null;
         try {
             jsonRepresentativeAPI = getJSON(this.getUrl());
-            jsonRepresentativeTripsAPI = getJSON(this.getTripsUrl());
             jsonRepresentativeSpendingsAPI = getJSON(this.getSpendingsUrl());
         } catch (Exception e) {
             e.printStackTrace();
@@ -47,12 +46,28 @@ public class RepresentativeCreator extends AbstractCreator {
 
         Gson gson = new Gson();
         RepresentativeAPI representativeAPI = gson.fromJson(jsonRepresentativeAPI, RepresentativeAPI.class);
-        RepresentativeTripsAPI representativeTripsAPI = gson.fromJson(jsonRepresentativeTripsAPI, RepresentativeTripsAPI.class);
         RepresentativeSpendingsAPI representativeSpendingsAPI = gson.fromJson(jsonRepresentativeSpendingsAPI, RepresentativeSpendingsAPI.class);
 
-        return new Representative(
-                representativeAPI,
-                representativeTripsAPI,
-                representativeSpendingsAPI);
+        if(representativeAPI.getData().getPoslowieLiczbaWyjazdow() == 0){
+            return new Representative(
+                    representativeAPI,
+                    representativeSpendingsAPI);
+        } else {
+            String jsonRepresentativeTripsAPI = null;
+            try {
+                jsonRepresentativeTripsAPI = getJSON(this.getTripsUrl());
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+
+            RepresentativeTripsAPI representativeTripsAPI = gson.fromJson(jsonRepresentativeTripsAPI, RepresentativeTripsAPI.class);
+
+            return new RepresentativeWithTrips(
+                    representativeAPI,
+                    representativeTripsAPI,
+                    representativeSpendingsAPI);
+        }
     }
 }
+
+
