@@ -31,7 +31,7 @@ public class Data {
     private Double poslowieWartoscBiuroInne;
     @SerializedName("poslowie.wartosc_biuro_ekspertyzy")
     @Expose
-    private Integer poslowieWartoscBiuroEkspertyzy;
+    private Double poslowieWartoscBiuroEkspertyzy;
     @SerializedName("poslowie.wartosc_biuro_materialy_biurowe")
     @Expose
     private Double poslowieWartoscBiuroMaterialyBiurowe;
@@ -43,7 +43,7 @@ public class Data {
     private String poslowieMandatWygasl;
     @SerializedName("poslowie.wartosc_biuro_taksowki")
     @Expose
-    private Integer poslowieWartoscBiuroTaksowki;
+    private Double poslowieWartoscBiuroTaksowki;
     @SerializedName("poslowie.sejm_okreg_id")
     @Expose
     private String poslowieSejmOkregId;
@@ -103,7 +103,7 @@ public class Data {
     private String poslowieKadencjaOstatnia;
     @SerializedName("poslowie.wartosc_biuro_spotkania")
     @Expose
-    private Integer poslowieWartoscBiuroSpotkania;
+    private Double poslowieWartoscBiuroSpotkania;
     @SerializedName("poslowie.liczba_glosowan_zbuntowanych")
     @Expose
     private Integer poslowieLiczbaGlosowanZbuntowanych;
@@ -350,7 +350,7 @@ public class Data {
      * @return
      *     The poslowieWartoscBiuroEkspertyzy
      */
-    public Integer getPoslowieWartoscBiuroEkspertyzy() {
+    public Double getPoslowieWartoscBiuroEkspertyzy() {
         return poslowieWartoscBiuroEkspertyzy;
     }
 
@@ -359,7 +359,7 @@ public class Data {
      * @param poslowieWartoscBiuroEkspertyzy
      *     The poslowie.wartosc_biuro_ekspertyzy
      */
-    public void setPoslowieWartoscBiuroEkspertyzy(Integer poslowieWartoscBiuroEkspertyzy) {
+    public void setPoslowieWartoscBiuroEkspertyzy(Double poslowieWartoscBiuroEkspertyzy) {
         this.poslowieWartoscBiuroEkspertyzy = poslowieWartoscBiuroEkspertyzy;
     }
 
@@ -422,7 +422,7 @@ public class Data {
      * @return
      *     The poslowieWartoscBiuroTaksowki
      */
-    public Integer getPoslowieWartoscBiuroTaksowki() {
+    public Double getPoslowieWartoscBiuroTaksowki() {
         return poslowieWartoscBiuroTaksowki;
     }
 
@@ -431,7 +431,7 @@ public class Data {
      * @param poslowieWartoscBiuroTaksowki
      *     The poslowie.wartosc_biuro_taksowki
      */
-    public void setPoslowieWartoscBiuroTaksowki(Integer poslowieWartoscBiuroTaksowki) {
+    public void setPoslowieWartoscBiuroTaksowki(Double poslowieWartoscBiuroTaksowki) {
         this.poslowieWartoscBiuroTaksowki = poslowieWartoscBiuroTaksowki;
     }
 
@@ -782,7 +782,7 @@ public class Data {
      * @return
      *     The poslowieWartoscBiuroSpotkania
      */
-    public Integer getPoslowieWartoscBiuroSpotkania() {
+    public Double getPoslowieWartoscBiuroSpotkania() {
         return poslowieWartoscBiuroSpotkania;
     }
 
@@ -791,7 +791,7 @@ public class Data {
      * @param poslowieWartoscBiuroSpotkania
      *     The poslowie.wartosc_biuro_spotkania
      */
-    public void setPoslowieWartoscBiuroSpotkania(Integer poslowieWartoscBiuroSpotkania) {
+    public void setPoslowieWartoscBiuroSpotkania(Double poslowieWartoscBiuroSpotkania) {
         this.poslowieWartoscBiuroSpotkania = poslowieWartoscBiuroSpotkania;
     }
 

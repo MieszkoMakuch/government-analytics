@@ -30,7 +30,7 @@ public class Data {
     private Double poslowieWartoscBiuroInne;
     @SerializedName("poslowie.wartosc_biuro_ekspertyzy")
     @Expose
-    private Integer poslowieWartoscBiuroEkspertyzy;
+    private Double poslowieWartoscBiuroEkspertyzy;
     @SerializedName("poslowie.wartosc_biuro_materialy_biurowe")
     @Expose
     private Double poslowieWartoscBiuroMaterialyBiurowe;
@@ -42,7 +42,7 @@ public class Data {
     private String poslowieMandatWygasl;
     @SerializedName("poslowie.wartosc_biuro_taksowki")
     @Expose
-    private Integer poslowieWartoscBiuroTaksowki;
+    private Double poslowieWartoscBiuroTaksowki;
     @SerializedName("poslowie.sejm_okreg_id")
     @Expose
     private String poslowieSejmOkregId;
@@ -102,7 +102,7 @@ public class Data {
     private String poslowieKadencjaOstatnia;
     @SerializedName("poslowie.wartosc_biuro_spotkania")
     @Expose
-    private Integer poslowieWartoscBiuroSpotkania;
+    private Double poslowieWartoscBiuroSpotkania;
     @SerializedName("poslowie.liczba_glosowan_zbuntowanych")
     @Expose
     private Integer poslowieLiczbaGlosowanZbuntowanych;
@@ -274,11 +274,11 @@ public class Data {
         this.poslowieWartoscBiuroInne = poslowieWartoscBiuroInne;
     }
 
-    public Integer getPoslowieWartoscBiuroEkspertyzy() {
+    public Double getPoslowieWartoscBiuroEkspertyzy() {
         return poslowieWartoscBiuroEkspertyzy;
     }
 
-    public void setPoslowieWartoscBiuroEkspertyzy(Integer poslowieWartoscBiuroEkspertyzy) {
+    public void setPoslowieWartoscBiuroEkspertyzy(Double poslowieWartoscBiuroEkspertyzy) {
         this.poslowieWartoscBiuroEkspertyzy = poslowieWartoscBiuroEkspertyzy;
     }
 
@@ -306,11 +306,11 @@ public class Data {
         this.poslowieMandatWygasl = poslowieMandatWygasl;
     }
 
-    public Integer getPoslowieWartoscBiuroTaksowki() {
+    public Double getPoslowieWartoscBiuroTaksowki() {
         return poslowieWartoscBiuroTaksowki;
     }
 
-    public void setPoslowieWartoscBiuroTaksowki(Integer poslowieWartoscBiuroTaksowki) {
+    public void setPoslowieWartoscBiuroTaksowki(Double poslowieWartoscBiuroTaksowki) {
         this.poslowieWartoscBiuroTaksowki = poslowieWartoscBiuroTaksowki;
     }
 
@@ -466,11 +466,11 @@ public class Data {
         this.poslowieKadencjaOstatnia = poslowieKadencjaOstatnia;
     }
 
-    public Integer getPoslowieWartoscBiuroSpotkania() {
+    public Double getPoslowieWartoscBiuroSpotkania() {
         return poslowieWartoscBiuroSpotkania;
     }
 
-    public void setPoslowieWartoscBiuroSpotkania(Integer poslowieWartoscBiuroSpotkania) {
+    public void setPoslowieWartoscBiuroSpotkania(Double poslowieWartoscBiuroSpotkania) {
         this.poslowieWartoscBiuroSpotkania = poslowieWartoscBiuroSpotkania;
     }
 
