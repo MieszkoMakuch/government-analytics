@@ -12,10 +12,8 @@ import java.io.IOException;
  */
 public abstract class AbstractCreator {
 
-
     private static OkHttpClient client = new OkHttpClient();
 
-    //??dlaczego throws IOException?
     protected String getJSON(String url) throws IOException {
         Request request = new Request.Builder()
                 .url(url)

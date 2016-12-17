@@ -10,7 +10,7 @@ public class RepresentativeAPI extends AbstractAPI{
 
     @SerializedName("id")
     @Expose
-    private String id;
+    private int id;
     @SerializedName("dataset")
     @Expose
     private String dataset;
@@ -47,7 +47,7 @@ public class RepresentativeAPI extends AbstractAPI{
      * @return
      *     The id
      */
-    public String getId() {
+    public int getId() {
         return id;
     }
 
@@ -56,7 +56,7 @@ public class RepresentativeAPI extends AbstractAPI{
      * @param id
      *     The id
      */
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 

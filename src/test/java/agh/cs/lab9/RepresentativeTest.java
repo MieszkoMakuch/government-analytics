@@ -11,7 +11,7 @@ import static org.junit.Assert.*;
 public class RepresentativeTest {
     @Test
     public void countSpendingsInYear() throws Exception {
-        Representative representative174 = new RepresentativeCreator(174).createRepresentative();
+        Representative representative174 = new RepresentativeCreator(216).createRepresentative();
         assertEquals(0, representative174.countSpendingsInYear(2013), 0.01);
     }
 
