@@ -1,13 +1,12 @@
 
 package agh.cs.lab9.json.sejmometr;
 
-import agh.cs.lab9.json.AbstractAPI;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 import java.util.List;
 
-public class SejmometrAPI extends AbstractAPI{
+public class SejmometrAPI {
 
     @SerializedName("Dataobject")
     @Expose

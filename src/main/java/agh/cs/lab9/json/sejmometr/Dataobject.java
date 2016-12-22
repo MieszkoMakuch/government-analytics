@@ -8,7 +8,7 @@ public class Dataobject {
 
     @SerializedName("id")
     @Expose
-    private String id;
+    private int id;
     @SerializedName("dataset")
     @Expose
     private String dataset;
@@ -39,7 +39,7 @@ public class Dataobject {
      * @return
      *     The id
      */
-    public String getId() {
+    public int getId() {
         return id;
     }
 
@@ -48,7 +48,7 @@ public class Dataobject {
      * @param id
      *     The id
      */
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 
