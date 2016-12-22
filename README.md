@@ -33,4 +33,5 @@ Korzystanie z danych udostępnianych w webowym API.
 3. Program powinien obsługiwać błędy oraz zawierać testy weryfikujące poprawność jego działania.
 4. Program wykorzystuje pliki lokalne umieszczone w folderze `jsonLocalFiles/`. Polecenie do aktualizacji plików lokalnych: 
     * `update sejmometr term 7` - aktualizuje dane wszystkich posłów 7. kadencji 
-    * `update sejmometr term 8` - aktualizuje dane wszystkich posłów 8. kadencji 
+    * `update sejmometr term 8` - aktualizuje dane wszystkich posłów 8. kadencji
+    * `update representative "Jarosław Kaczyński"` - aktualizuje dane posła o określonym imieniu i nazwisku
