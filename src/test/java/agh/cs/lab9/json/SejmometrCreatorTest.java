@@ -10,7 +10,8 @@ import static org.junit.Assert.*;
 public class SejmometrCreatorTest {
     @Test
     public void getSejmometrUrl() throws Exception {
-        SejmometrCreator sejmometrDataGetter = new SejmometrCreator(7);
+        SejmometrCreator sejmometrDataGetter =
+                new SejmometrCreator("https://api-v3.mojepanstwo.pl/dane/poslowie.json?conditions[poslowie.kadencja]=",7);
         assertEquals("https://api-v3.mojepanstwo.pl/dane/poslowie.json?conditions[poslowie.kadencja]=7",
                 sejmometrDataGetter.getUrl());
     }
