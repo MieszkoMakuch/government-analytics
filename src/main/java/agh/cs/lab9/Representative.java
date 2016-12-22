@@ -48,7 +48,7 @@ public class Representative {
         for (Roczniki rocznik : yearsSpendingList) {
             if (rocznik.getRok() == year) return rocznik;
         }
-        throw new NoSpendingsInfoInYearException("Information about spendings in year " + year + " is not available " +
+        throw new NoSpendingsDetailsInYearException("Information about spendings in year " + year + " is not available " +
                 "(name: " + name + "id=" + id + ")");
     }
 

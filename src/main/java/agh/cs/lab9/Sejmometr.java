@@ -37,7 +37,7 @@ public class Sejmometr {
         for(Representative representative : representatives.values()) {
             try{
                 sum += representative.countSpendingsInYear(year);
-            } catch (NoSpendingsInfoInYearException e) {
+            } catch (NoSpendingsDetailsInYearException e) {
                 System.out.println(e.getMessage());
             }
         }
