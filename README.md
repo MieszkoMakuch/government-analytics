@@ -20,7 +20,7 @@ Korzystanie z danych udostępnianych w webowym API.
     * posła/posłanki, który najdłużej przebywał za granicą. Przykłady:
         * `select representative with the longest trip`
         * `select representative longest trip`
-        * `slect rep longest trip`
+        * `select rep longest trip`
     * posła/posłanki, który odbył najdroższą podróż zagraniczną. Przykłady:
         * `select representative with the most expensive trip`
         * `select representative mexpensive trip`
