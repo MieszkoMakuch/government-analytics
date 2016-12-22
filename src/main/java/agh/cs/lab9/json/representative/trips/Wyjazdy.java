@@ -3,6 +3,7 @@ package agh.cs.lab9.json.representative.trips;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
+import com.neovisionaries.i18n.CountryCode;
 
 public class Wyjazdy {
 
@@ -26,7 +27,7 @@ public class Wyjazdy {
     private String wniosekNr;
     @SerializedName("liczba_dni")
     @Expose
-    private String liczbaDni;
+    private int liczbaDni;
     @SerializedName("od")
     @Expose
     private String od;
@@ -35,34 +36,34 @@ public class Wyjazdy {
     private String _do;
     @SerializedName("koszt_transport")
     @Expose
-    private String kosztTransport;
+    private Double kosztTransport;
     @SerializedName("koszt_dieta")
     @Expose
-    private String kosztDieta;
+    private Double kosztDieta;
     @SerializedName("koszt_hotel")
     @Expose
-    private String kosztHotel;
+    private Double kosztHotel;
     @SerializedName("koszt_dojazd")
     @Expose
-    private String kosztDojazd;
+    private Double kosztDojazd;
     @SerializedName("koszt_ubezpieczenie")
     @Expose
-    private String kosztUbezpieczenie;
+    private Double kosztUbezpieczenie;
     @SerializedName("koszt_fundusz")
     @Expose
-    private String kosztFundusz;
+    private Double kosztFundusz;
     @SerializedName("koszt_kurs")
     @Expose
-    private String kosztKurs;
+    private Double kosztKurs;
     @SerializedName("koszt_zaliczki")
     @Expose
-    private String kosztZaliczki;
+    private Double kosztZaliczki;
     @SerializedName("koszt_suma")
     @Expose
-    private String kosztSuma;
+    private Double kosztSuma;
 
-    public String getCountryCode() {
-        return countryCode;
+    public CountryCode getCountryCode() {
+        return CountryCode.getByCode(countryCode);
     }
 
     public void setCountryCode(String countryCode) {
@@ -109,11 +110,11 @@ public class Wyjazdy {
         this.wniosekNr = wniosekNr;
     }
 
-    public String getLiczbaDni() {
+    public int getLiczbaDni() {
         return liczbaDni;
     }
 
-    public void setLiczbaDni(String liczbaDni) {
+    public void setLiczbaDni(int liczbaDni) {
         this.liczbaDni = liczbaDni;
     }
 
@@ -133,75 +134,75 @@ public class Wyjazdy {
         this._do = _do;
     }
 
-    public String getKosztTransport() {
+    public Double getKosztTransport() {
         return kosztTransport;
     }
 
-    public void setKosztTransport(String kosztTransport) {
+    public void setKosztTransport(Double kosztTransport) {
         this.kosztTransport = kosztTransport;
     }
 
-    public String getKosztDieta() {
+    public Double getKosztDieta() {
         return kosztDieta;
     }
 
-    public void setKosztDieta(String kosztDieta) {
+    public void setKosztDieta(Double kosztDieta) {
         this.kosztDieta = kosztDieta;
     }
 
-    public String getKosztHotel() {
+    public Double getKosztHotel() {
         return kosztHotel;
     }
 
-    public void setKosztHotel(String kosztHotel) {
+    public void setKosztHotel(Double kosztHotel) {
         this.kosztHotel = kosztHotel;
     }
 
-    public String getKosztDojazd() {
+    public Double getKosztDojazd() {
         return kosztDojazd;
     }
 
-    public void setKosztDojazd(String kosztDojazd) {
+    public void setKosztDojazd(Double kosztDojazd) {
         this.kosztDojazd = kosztDojazd;
     }
 
-    public String getKosztUbezpieczenie() {
+    public Double getKosztUbezpieczenie() {
         return kosztUbezpieczenie;
     }
 
-    public void setKosztUbezpieczenie(String kosztUbezpieczenie) {
+    public void setKosztUbezpieczenie(Double kosztUbezpieczenie) {
         this.kosztUbezpieczenie = kosztUbezpieczenie;
     }
 
-    public String getKosztFundusz() {
+    public Double getKosztFundusz() {
         return kosztFundusz;
     }
 
-    public void setKosztFundusz(String kosztFundusz) {
+    public void setKosztFundusz(Double kosztFundusz) {
         this.kosztFundusz = kosztFundusz;
     }
 
-    public String getKosztKurs() {
+    public Double getKosztKurs() {
         return kosztKurs;
     }
 
-    public void setKosztKurs(String kosztKurs) {
+    public void setKosztKurs(Double kosztKurs) {
         this.kosztKurs = kosztKurs;
     }
 
-    public String getKosztZaliczki() {
+    public Double getKosztZaliczki() {
         return kosztZaliczki;
     }
 
-    public void setKosztZaliczki(String kosztZaliczki) {
+    public void setKosztZaliczki(Double kosztZaliczki) {
         this.kosztZaliczki = kosztZaliczki;
     }
 
-    public String getKosztSuma() {
+    public Double getKosztSuma() {
         return kosztSuma;
     }
 
-    public void setKosztSuma(String kosztSuma) {
+    public void setKosztSuma(Double kosztSuma) {
         this.kosztSuma = kosztSuma;
     }
 

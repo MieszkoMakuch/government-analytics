@@ -142,7 +142,7 @@ public class Data {
     private String poslowieId;
     @SerializedName("poslowie.wartosc_refundacja_kwater_pln")
     @Expose
-    private Integer poslowieWartoscRefundacjaKwaterPln;
+    private Double poslowieWartoscRefundacjaKwaterPln;
     @SerializedName("poslowie.liczba_interpelacji")
     @Expose
     private Integer poslowieLiczbaInterpelacji;
@@ -1016,7 +1016,7 @@ public class Data {
      * @return
      *     The poslowieWartoscRefundacjaKwaterPln
      */
-    public Integer getPoslowieWartoscRefundacjaKwaterPln() {
+    public Double getPoslowieWartoscRefundacjaKwaterPln() {
         return poslowieWartoscRefundacjaKwaterPln;
     }
 
@@ -1025,7 +1025,7 @@ public class Data {
      * @param poslowieWartoscRefundacjaKwaterPln
      *     The poslowie.wartosc_refundacja_kwater_pln
      */
-    public void setPoslowieWartoscRefundacjaKwaterPln(Integer poslowieWartoscRefundacjaKwaterPln) {
+    public void setPoslowieWartoscRefundacjaKwaterPln(Double poslowieWartoscRefundacjaKwaterPln) {
         this.poslowieWartoscRefundacjaKwaterPln = poslowieWartoscRefundacjaKwaterPln;
     }
 

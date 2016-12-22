@@ -1,11 +1,10 @@
 
 package agh.cs.lab9.json.representative.spendings;
 
-import agh.cs.lab9.json.AbstractAPI;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-public class RepresentativeSpendingsAPI extends AbstractAPI {
+public class RepresentativeSpendingsAPI {
 
     @SerializedName("id")
     @Expose

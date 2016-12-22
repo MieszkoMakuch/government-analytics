@@ -1,11 +1,10 @@
 
 package agh.cs.lab9.json.representative.trips;
 
-import agh.cs.lab9.json.AbstractAPI;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-public class RepresentativeTripsAPI extends AbstractAPI {
+public class RepresentativeTripsAPI {
 
     @SerializedName("id")
     @Expose
