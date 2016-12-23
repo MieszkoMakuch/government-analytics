@@ -1,17 +1,21 @@
 package agh.cs.lab9;
 
 import agh.cs.lab9.json.LocalSejmometrCreator;
+import com.neovisionaries.i18n.CountryCode;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 /**
  * Created by mieszkomakuch on 22.12.2016.
  */
 public class OptionsParser {
     private String[] args;
+    private final int argsLength;
     private final String[] selectEquivalents = {"select"};
     private final String[] updateEquivalents = {"update"};
-    private final String[] representativeEquivalents = {"representative", "rep"};
+    private final String[] representativeEquivalents = {"representative", "rep", "representatives"};
     private final String[] avgEquivalents = {"avg", "average"};
     private final String[] officeEquivalents = {"office"};
     private final String[] spendingsEquivalents = {"spendings"};
@@ -20,9 +24,11 @@ public class OptionsParser {
     private final String[] maxCostEquivalents = {"expensive", "mexpensive"};
     private final String[] tripEquivalents = {"trip", "trips"};
     private final String[] termEquivalents = {"term"};
+    private final String[] visitedEquivalents = {"visited"};
 
     public OptionsParser(String[] args) {
         this.args = args;
+        argsLength = args.length;
     }
 
     public ChosenOption getChosenOption(){
@@ -47,7 +53,11 @@ public class OptionsParser {
 
     private ChosenOption parseSelectStatement (ChosenOption chosenOption){
         if(Arrays.asList(representativeEquivalents).contains(args[1])){
-            chosenOption = parseMaxAggregate(chosenOption);
+            if(Arrays.asList(visitedEquivalents).contains(args[argsLength-4])){
+                chosenOption = parseVisitedCountries(chosenOption);
+            } else {
+                chosenOption = parseMaxAggregate(chosenOption);
+            }
         } else if (Arrays.asList(avgEquivalents).contains(args[1])){
             chosenOption = parseAvgAggregate(chosenOption);
         } else {
@@ -56,23 +66,38 @@ public class OptionsParser {
         return chosenOption;
     }
 
+    private ChosenOption parseVisitedCountries(ChosenOption chosenOption){
+        chosenOption.setRepresentativeDetails(RepresentativesDetails.TripsToCOUNTRY);
+        String countryString = args[argsLength-3];
+        CountryCode countryCode = CountryCode.getByCode(countryString.toUpperCase());
+        if(countryCode == null) {
+           List<CountryCode> countryCodes = CountryCode.findByName(countryString);
+           if (countryCodes.size() != 1){
+               throw new IllegalArgumentException(countryString + " is not a valid country name/code");
+           }
+           countryCode = countryCodes.get(0);
+        }
+        chosenOption.setCountryCode(countryCode);
+        chosenOption = parseTerm(chosenOption);
+        return chosenOption;
+    }
+
     private ChosenOption parseMaxAggregate(ChosenOption chosenOption){
         requiredNumberOfArguments(6,9);
-        int length = args.length;
-        if (Arrays.asList(maxNumberEquivalents).contains(args[length-4])){
+        if (Arrays.asList(maxNumberEquivalents).contains(args[argsLength-4])){
             chosenOption.setAggregate(Aggregates.MaxNUMBER);
-        } else if (Arrays.asList(maxLengthEquivalents).contains(args[length-4])){
+        } else if (Arrays.asList(maxLengthEquivalents).contains(args[argsLength-4])){
             chosenOption.setAggregate(Aggregates.MaxLength);
-        } else if (Arrays.asList(maxCostEquivalents).contains(args[length-4])) {
+        } else if (Arrays.asList(maxCostEquivalents).contains(args[argsLength-4])) {
             chosenOption.setAggregate(Aggregates.MaxCOST);
         } else {
-            throw new IllegalArgumentException(args[length-4] + " is not a valid argument");
+            throw new IllegalArgumentException(args[argsLength-4] + " is not a valid argument");
         }
 
-        if(Arrays.asList(tripEquivalents).contains(args[length-3])){
+        if(Arrays.asList(tripEquivalents).contains(args[argsLength-3])){
             chosenOption.setRepresentativeDetails(RepresentativesDetails.TRIPS);
         } else {
-            throw new IllegalArgumentException(args[length-3] + " is not a valid argument");
+            throw new IllegalArgumentException(args[argsLength-3] + " is not a valid argument");
         }
         chosenOption = parseTerm(chosenOption);
         return chosenOption;
@@ -90,11 +115,10 @@ public class OptionsParser {
     }
 
     private ChosenOption parseTerm(ChosenOption chosenOption) {
-        int length = args.length;
-        if (Arrays.asList(termEquivalents).contains(args[length-2])){
-            chosenOption.setTerm(Integer.parseInt(args[length-1]));
+        if (Arrays.asList(termEquivalents).contains(args[argsLength-2])){
+            chosenOption.setTerm(Integer.parseInt(args[argsLength-1]));
         } else {
-            throw new IllegalArgumentException(args[length - 2] + " is not a valid argument");
+            throw new IllegalArgumentException(args[argsLength - 2] + " is not a valid argument");
         }
         return chosenOption;
     }
@@ -120,11 +144,11 @@ public class OptionsParser {
     }
 
     private void requiredNumberOfArguments(int from, int to) throws IllegalArgumentException{
-        if (args.length < from){
-            throw new IllegalArgumentException("Not enough arguments: " + args.length);
+        if (argsLength < from){
+            throw new IllegalArgumentException("Not enough arguments: " + argsLength);
         }
-        if (args.length > to){
-            throw new IllegalArgumentException("To many arguments: " + args.length);
+        if (argsLength > to){
+            throw new IllegalArgumentException("To many arguments: " + argsLength);
         }
     }
 
