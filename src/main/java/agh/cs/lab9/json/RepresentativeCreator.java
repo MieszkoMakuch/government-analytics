@@ -57,7 +57,7 @@ public class RepresentativeCreator extends AbstractCreator {
                         representativeTripsAPI,
                         representativeSpendingsAPI);
             } catch (JsonSyntaxException e) {
-                System.out.println("Brak informacji o wyjazdach posła o id: " + representativeAPI.getId());
+                //Ignore this case
             } catch (Exception e) {
                 e.printStackTrace();
             }
