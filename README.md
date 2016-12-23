@@ -4,7 +4,7 @@ Korzystanie z danych udostępnianych w webowym API.
 
 1. Zapoznaj się z API serwisu sejmometr https://mojepanstwo.pl/api/sejmometr
 2. Opracuj system, który na podstawie argumentów linii poleceń wyświetla następujące informacje (dla określonej kadencji
-   sejmu):
+   sejmu lub określonego roku):
     * suma wydatków posła/posłanki o określonym imieniu i nazwisku. Przykłady:
         * `select "Jarosław Kaczyński" spendings in 2013`
         * `select "Ewa Żmuda-Trzebiatowska" spendings in 2013`
