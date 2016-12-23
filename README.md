@@ -26,7 +26,7 @@ Korzystanie z danych udostępnianych w webowym API.
         * `select representative with the most expensive trip term 7`
         * `select representative mexpensive trip term 7`
         * `select rep mexpensive trip term 7`
-    * listę wszystkich posłów, którzy odwiedzili Włochy. Przykłady:
+    * listę wszystkich posłów, którzy odwiedzili dany kraj. Przykłady:
         * `select representatives who visited Italy term 7`
         * `select representatives visited Italy term 7`
         * `select rep visited Italy term 7`
