@@ -7,7 +7,8 @@ Korzystanie z danych udostępnianych w webowym API.
    sejmu):
     * suma wydatków posła/posłanki o określonym imieniu i nazwisku. Przykłady:
         * `select „Jarosław Kaczyński” spendings in 2013`
-        * `select „Piotr Krzysztof Ćwik” spendings in 2013`
+        * `select „Ewa Żmuda-Trzebiatowska” spendings in 2013`
+        * `select „Armand Kamil Ryfiński” spendings in 2013`
     * wysokości wydatków na 'drobne naprawy i remonty biura poselskiego' określonego posła/posłanki. Przykłady:
         * `select „Jarosław Kaczyński” office spendings in 2013`
         * `select „Piotr Krzysztof Ćwik” office spendings in 2013`
