@@ -15,22 +15,22 @@ Korzystanie z danych udostępnianych w webowym API.
     * średniej wartości sumy wydatków wszystkich posłów. Przykłady:
         * `select avg spendings in 2013`
     * posła/posłanki, który wykonał najwięcej podróży zagranicznych. Przykłady:
-        * `select representative with max trips`
-        * `select representative max trips`
-        * `select rep max trips`
+        * `select representative with max trips term 7`
+        * `select representative max trips term 7`
+        * `select rep max trips term 7`
     * posła/posłanki, który najdłużej przebywał za granicą. Przykłady:
-        * `select representative with the longest trip`
-        * `select representative longest trip`
-        * `select rep longest trip`
+        * `select representative with the longest trip term 7`
+        * `select representative longest trip term 7`
+        * `select rep longest trip term 7`
     * posła/posłanki, który odbył najdroższą podróż zagraniczną. Przykłady:
-        * `select representative with the most expensive trip`
-        * `select representative mexpensive trip`
-        * `select rep mexpensive trip`
+        * `select representative with the most expensive trip term 7`
+        * `select representative mexpensive trip term 7`
+        * `select rep mexpensive trip term 7`
     * listę wszystkich posłów, którzy odwiedzili Włochy. Przykłady:
-        * `select representatives who visited Italy`
-        * `select representatives Italy`
-        * `select rep Italy`
-        * `select rep IT`
+        * `select representatives who visited Italy term 7`
+        * `select representatives Italy term 7`
+        * `select rep Italy term 7`
+        * `select rep IT term 7`
 3. Program powinien obsługiwać błędy oraz zawierać testy weryfikujące poprawność jego działania.
 4. Program wykorzystuje pliki lokalne umieszczone w folderze `jsonLocalFiles/`. Polecenie do aktualizacji plików lokalnych: 
     * `update sejmometr term 7` - aktualizuje dane wszystkich posłów 7. kadencji 
