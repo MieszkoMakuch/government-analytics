@@ -11,7 +11,7 @@ Korzystanie z danych udostępnianych w webowym API.
         * `select „Armand Kamil Ryfiński” spendings in 2013`
     * wysokości wydatków na 'drobne naprawy i remonty biura poselskiego' określonego posła/posłanki. Przykłady:
         * `select „Jarosław Kaczyński” office spendings in 2013`
-        * `select „Piotr Krzysztof Ćwik” office spendings in 2013`
+        * `select „Ewa Żmuda-Trzebiatowska” spendings in 2013`
     * średniej wartości sumy wydatków wszystkich posłów. Przykłady:
         * `select avg spendings in 2013`
     * posła/posłanki, który wykonał najwięcej podróży zagranicznych. Przykłady:
