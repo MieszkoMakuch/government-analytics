@@ -5,6 +5,7 @@ import agh.cs.lab9.json.representative.spendings.RepresentativeSpendingsAPI;
 import agh.cs.lab9.json.representative.spendings.Roczniki;
 import com.neovisionaries.i18n.CountryCode;
 
+import java.math.BigDecimal;
 import java.util.List;
 
 /**
@@ -34,11 +35,11 @@ public class Representative {
         return name;
     }
 
-    public double countSpendingsInYear(int year) {
+    public BigDecimal countSpendingsInYear(int year) {
         Roczniki rocznik = getYearSpendingsFromInt(year);
-        double result = 0;
-        for (Double spend : rocznik.getPola()) {
-            result += spend;
+        BigDecimal result = new BigDecimal(0.00);
+        for (BigDecimal spend : rocznik.getPola()) {
+            result = result.add(spend);
         }
         return result;
     }
@@ -49,10 +50,10 @@ public class Representative {
             if (rocznik.getRok() == year) return rocznik;
         }
         throw new NoSpendingsDetailsInYearException("Information about spendings in year " + year + " is not available " +
-                "(name: " + name + "id=" + id + ")");
+                "(name: " + name + ", id=" + id + ")");
     }
 
-    public double getOfficeRenovationSpendings (int year) {
+    public BigDecimal getOfficeRenovationSpendings (int year) {
         return getYearSpendingsFromInt(year).getPola().get(12);
     }
 
