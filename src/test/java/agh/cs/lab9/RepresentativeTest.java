@@ -4,6 +4,8 @@ import agh.cs.lab9.json.LocalRepresentativeCreator;
 import com.neovisionaries.i18n.CountryCode;
 import org.junit.Test;
 
+import java.math.BigDecimal;
+
 import static org.junit.Assert.*;
 
 /**
@@ -54,13 +56,13 @@ public class RepresentativeTest {
     @Test
     public void getOfficeRenovationSpendings() throws Exception {
         Representative representative = new LocalRepresentativeCreator(174).createRepresentative();
-        assertEquals(2170.09, representative.getOfficeRenovationSpendings(2013), 0.001);
+        assertEquals("2170.09", representative.getOfficeRenovationSpendings(2013).toString());
     }
 
     @Test
     public void countSpendingsInYear() throws Exception {
         Representative representative = new LocalRepresentativeCreator(174).createRepresentative();
-        assertEquals(134261.72, representative.countSpendingsInYear(2013), 0.001);
+        assertEquals("134261.72", representative.countSpendingsInYear(2013).toString());
     }
 
 }

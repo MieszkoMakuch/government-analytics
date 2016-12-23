@@ -10,11 +10,11 @@ import static org.junit.Assert.*;
 public class SejmometrUpdaterTest {
     @Test
     public void update1() throws Exception {
-        new SejmometrUpdater(7).update();
+        //new SejmometrUpdater(7).update();
     }
     @Test
     public void update2() throws Exception {
-        new SejmometrUpdater(8).update();
+        //new SejmometrUpdater(8).update();
     }
 
 }
