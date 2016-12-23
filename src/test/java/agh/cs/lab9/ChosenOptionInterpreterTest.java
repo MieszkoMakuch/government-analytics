@@ -1,5 +1,7 @@
 package agh.cs.lab9;
 
+import agh.cs.lab9.json.LocalSejmometrCreator;
+import com.neovisionaries.i18n.CountryCode;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -134,6 +136,58 @@ public class ChosenOptionInterpreterTest {
                         "Witold Waszczykowski (id=414) (Chost of the trip: 27305.58 zł)",
                 new ChosenOptionInterpreter(chosenOption).interpret());
 
+    }
+
+    @Test
+    public void interpretSelectRepresentativesWhoVisitedItalyTerm7() throws Exception {
+        //Creating expected representatives list
+        Sejmometr sejmometr = new LocalSejmometrCreator(7).createSejmometr();
+        String expectedList =
+                sejmometr.getRepresentativesWhoVisitedCountry(CountryCode.getByCode("IT")).toString();
+
+        String[] args = {"select", "representatives", "who", "visited", "Italy", "term", "7"};
+        ChosenOption chosenOption = new OptionsParser(args).getChosenOption();
+        assertEquals("Representatives who visited Italy in 7 term: " + expectedList,
+                new ChosenOptionInterpreter(chosenOption).interpret());
+    }
+
+    @Test
+    public void interpretSelectRepresentativesVisitedItalyTerm7() throws Exception {
+        //Creating expected representatives list
+        Sejmometr sejmometr = new LocalSejmometrCreator(7).createSejmometr();
+        String expectedList =
+                sejmometr.getRepresentativesWhoVisitedCountry(CountryCode.getByCode("IT")).toString();
+
+        String[] args = {"select", "representatives", "visited", "Italy", "term", "7"};
+        ChosenOption chosenOption = new OptionsParser(args).getChosenOption();
+        assertEquals("Representatives who visited Italy in 7 term: " + expectedList,
+                new ChosenOptionInterpreter(chosenOption).interpret());
+    }
+
+    @Test
+    public void interpretSelectRepVisitedItalyTerm7() throws Exception {
+        //Creating expected representatives list
+        Sejmometr sejmometr = new LocalSejmometrCreator(7).createSejmometr();
+        String expectedList =
+                sejmometr.getRepresentativesWhoVisitedCountry(CountryCode.getByCode("IT")).toString();
+
+        String[] args = {"select", "rep", "visited", "Italy", "term", "7"};
+        ChosenOption chosenOption = new OptionsParser(args).getChosenOption();
+        assertEquals("Representatives who visited Italy in 7 term: " + expectedList,
+                new ChosenOptionInterpreter(chosenOption).interpret());
+    }
+
+    @Test
+    public void interpretSelectRepVisitedItTerm7() throws Exception {
+        //Creating expected representatives list
+        Sejmometr sejmometr = new LocalSejmometrCreator(7).createSejmometr();
+        String expectedList =
+                sejmometr.getRepresentativesWhoVisitedCountry(CountryCode.getByCode("IT")).toString();
+
+        String[] args = {"select", "rep", "visited", "It", "term", "7"};
+        ChosenOption chosenOption = new OptionsParser(args).getChosenOption();
+        assertEquals("Representatives who visited Italy in 7 term: " + expectedList,
+                new ChosenOptionInterpreter(chosenOption).interpret());
     }
 
 }

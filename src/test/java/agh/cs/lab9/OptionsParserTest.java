@@ -115,6 +115,47 @@ public class OptionsParserTest {
     }
 
     @Test
+    public void parseVisitedCountriesItaly() throws Exception {
+        String[] args = {"select", "representatives", "who", "visited", "Italy", "term", "7"};
+        //Reflection
+        ChosenOption chosenOption = prepareChosenOptionWithReflection(args, "parseVisitedCountries");
+        assertEquals(RepresentativesDetails.TripsToCOUNTRY, chosenOption.getRepresentativeDetails());
+        assertEquals(7, chosenOption.getTerm());
+        assertEquals("Italy", chosenOption.getCountryCode().getName());
+    }
+
+    @Test
+    public void parseVisitedCountriesUkraine() throws Exception {
+        String[] args = {"select", "representatives", "who", "visited", "Ukraine", "term", "7"};
+        //Reflection
+        ChosenOption chosenOption = prepareChosenOptionWithReflection(args, "parseVisitedCountries");
+        assertEquals(RepresentativesDetails.TripsToCOUNTRY, chosenOption.getRepresentativeDetails());
+        assertEquals(7, chosenOption.getTerm());
+        assertEquals("Ukraine", chosenOption.getCountryCode().getName());
+    }
+
+    @Test
+    public void parseVisitedCountriesUk() throws Exception {
+        String[] args = {"select", "representatives", "who", "visited", "GB", "term", "7"};
+        //Reflection
+        ChosenOption chosenOption = prepareChosenOptionWithReflection(args, "parseVisitedCountries");
+        assertEquals(RepresentativesDetails.TripsToCOUNTRY, chosenOption.getRepresentativeDetails());
+        assertEquals(7, chosenOption.getTerm());
+        assertEquals("United Kingdom", chosenOption.getCountryCode().getName());
+    }
+
+
+    @Test
+    public void parseVisitedCountriesIt() throws Exception {
+        String[] args = {"select", "representatives", "who", "visited", "IT", "term", "7"};
+        //Reflection
+        ChosenOption chosenOption = prepareChosenOptionWithReflection(args, "parseVisitedCountries");
+        assertEquals(RepresentativesDetails.TripsToCOUNTRY, chosenOption.getRepresentativeDetails());
+        assertEquals(7, chosenOption.getTerm());
+        assertEquals("Italy", chosenOption.getCountryCode().getName());
+    }
+
+    @Test
     public void parseSelectStatement() throws Exception {
     }
 
@@ -131,4 +172,5 @@ public class OptionsParserTest {
         assertEquals(RepresentativesDetails.TRIPS, chosenOption.getRepresentativeDetails());
         assertEquals(7, chosenOption.getTerm());
     }
+
 }
