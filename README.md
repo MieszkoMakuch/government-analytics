@@ -26,11 +26,11 @@ Korzystanie z danych udostępnianych w webowym API.
         * `select representative with the most expensive trip term 7`
         * `select representative mexpensive trip term 7`
         * `select rep mexpensive trip term 7`
-    * listę wszystkich posłów, którzy odwiedzili Włochy. Przykłady:
+    * listę wszystkich posłów, którzy odwiedzili dany kraj. Przykłady:
         * `select representatives who visited Italy term 7`
-        * `select representatives Italy term 7`
-        * `select rep Italy term 7`
-        * `select rep IT term 7`
+        * `select representatives visited Italy term 7`
+        * `select rep visited Italy term 7`
+        * `select rep visited IT term 7`
 3. Program powinien obsługiwać błędy oraz zawierać testy weryfikujące poprawność jego działania.
 4. Program wykorzystuje pliki lokalne umieszczone w folderze `jsonLocalFiles/`. Polecenie do aktualizacji plików lokalnych: 
     * `update sejmometr term 7` - aktualizuje dane wszystkich posłów 7. kadencji 
