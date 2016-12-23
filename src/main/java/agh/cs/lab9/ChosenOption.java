@@ -1,5 +1,7 @@
 package agh.cs.lab9;
 
+import com.neovisionaries.i18n.CountryCode;
+
 /**
  * Created by mieszkomakuch on 22.12.2016.
  */
@@ -13,6 +15,7 @@ public class ChosenOption {
     private int representativeId = -1;
     private int year = -1;
     private int term = -1;
+    private CountryCode countryCode = null;
 
     public ChosenOption() {
     }
@@ -79,6 +82,14 @@ public class ChosenOption {
 
     public void setTerm(int term) {
         this.term = term;
+    }
+
+    public CountryCode getCountryCode() {
+        return countryCode;
+    }
+
+    public void setCountryCode(CountryCode countryCode) {
+        this.countryCode = countryCode;
     }
 
     @Override
