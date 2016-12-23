@@ -64,21 +64,21 @@ public class Representative {
     public int getNumberOfTripsInCountry(CountryCode countryCode) {
         if(this.numberOfTripsWithMissingDetails() > 0){
             System.out.println(missingTripInformationMessage() +
-                    " assuming that none of those tips took place in " + countryCode.getName() + ".");
+                    " Assuming that none of those tips took place in " + countryCode.getName() + ".");
         }
         return 0;
     }
 
     public int getNumberOfDaysAbroad() {
         if(this.numberOfTripsWithMissingDetails() > 0){
-            System.out.println(missingTripInformationMessage() + " assuming that those trip(s) had 0 days.");
+            System.out.println(missingTripInformationMessage() + " Assuming that those trip(s) had 0 days.");
         }
         return 0;
     }
 
     public Double getCostOfTheMostExpensiveTrip() {
         if(this.numberOfTripsWithMissingDetails() > 0){
-            System.out.println(missingTripInformationMessage() + " assuming that those trip(s) cost 0 zł.");
+            System.out.println(missingTripInformationMessage() + " Assuming that those trip(s) cost 0 zł.");
         }
         return 0.0;
     }
@@ -88,16 +88,16 @@ public class Representative {
     }
 
     protected String missingTripInformationMessage(){
-        return "Missing information about " + numberOfTripsWithMissingDetails() + " trip(s) (name: " + name
-                + ", id: " + id + ")";
+        return "Missing information about " + numberOfTripsWithMissingDetails() + " " + this.toStringS() + " trip(s).";
     }
 
 
     @Override
     public String toString() {
-        return "Representative{" +
-                "representativeAPI=" + representativeAPI +
-                ", representativeSpendingsAPI=" + representativeSpendingsAPI +
-                '}';
+        return name + " (id=" + id + ")";
+    }
+
+    public String toStringS() {
+        return name + "'s (id=" + id + ")";
     }
 }

@@ -64,13 +64,4 @@ public class RepresentativeWithTripsInfo extends Representative{
         }
         return maxCost;
     }
-
-    @Override
-    public String toString() {
-        return "RepresentativeWithTripsInfo{" +
-                "representativeAPI=" + representativeAPI +
-                ", representativeSpendingsAPI=" + representativeSpendingsAPI +
-                ", representativeTripsAPI=" + representativeTripsAPI +
-                '}';
-    }
 }
