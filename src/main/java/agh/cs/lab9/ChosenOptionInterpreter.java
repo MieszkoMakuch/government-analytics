@@ -3,6 +3,8 @@ package agh.cs.lab9;
 import agh.cs.lab9.json.LocalRepresentativeCreator;
 import agh.cs.lab9.json.LocalSejmometrCreator;
 
+import java.util.ArrayList;
+
 /**
  * Created by mieszkomakuch on 23.12.2016.
  */
@@ -13,18 +15,22 @@ public class ChosenOptionInterpreter {
         this.chosenOption = chosenOption;
     }
 
+    public String getInterpretResult(){
+        return "\n---------------------------------------RESULT--------------------------------------------\n\n" +
+                interpret() +
+             "\n\n-----------------------------------------------------------------------------------------\n";
+    }
+
     public String interpret(){
         if(this.chosenOption.equals(sumOfSpendingsOfRepresentativeWithSpecifiedName())){
             Representative representative =
                     new LocalRepresentativeCreator(chosenOption.getRepresentativeId()).createRepresentative();
-            return  representative.getName() + "'s (id=" + representative.getId() + ") spendings in " +
-                    chosenOption.getYear() + ": " +
+            return  representative.toStringS() + " spendings in " + chosenOption.getYear() + ": " +
                     String.valueOf(representative.countSpendingsInYear(chosenOption.getYear())) + " zł";
         } else if (this.chosenOption.equals(sumOfOfficeSpendingsOfRepresentativeWithSpecifiedName())){
             Representative representative =
                     new LocalRepresentativeCreator(chosenOption.getRepresentativeId()).createRepresentative();
-            return  representative.getName() + "'s (id=" + representative.getId() + ") office renovation spendings in " +
-                    chosenOption.getYear() + ": " +
+            return  representative.toStringS() + " office renovation spendings in " + chosenOption.getYear() + ": " +
                     String.valueOf(representative.getOfficeRenovationSpendings(chosenOption.getYear())) + " zł";
         } else if (this.chosenOption.equals(avgSpendingsIn2013())){
             Sejmometr sejmometr = new LocalSejmometrCreator(7).createSejmometr();
@@ -34,20 +40,24 @@ public class ChosenOptionInterpreter {
             Sejmometr sejmometr = new LocalSejmometrCreator(chosenOption.getTerm()).createSejmometr();
             Representative representative = sejmometr.getRepresentativeWithBiggestNoOfTripsAbroad();
             return "Representative with the biggest number of trips: " +
-                    representative.getName() +" (id=" + representative.getId() +
-                    ") (Number of trips: " + representative.getNumberOfTripsAbroad() + ")";
+                    representative.toString() + " (Number of trips: " + representative.getNumberOfTripsAbroad() + ")";
         } else if (this.chosenOption.equals(representativeWithBiggestNoOfDaysAbroad())) {
             Sejmometr sejmometr = new LocalSejmometrCreator(chosenOption.getTerm()).createSejmometr();
             Representative representative = sejmometr.getRepresentativeWithTheBiggestNumberOfDaysAbroad();
             return "Representative with the biggest number of days abroad: " +
-                    representative.getName() + " (id=" + representative.getId() +
-                    ") (Number of days abroad: " + representative.getNumberOfDaysAbroad() + ")";
+                    representative.toString() +
+                    " (Number of days abroad: " + representative.getNumberOfDaysAbroad() + ")";
         } else if (this.chosenOption.equals(representativeWithTheMostExpensiveTrip())) {
             Sejmometr sejmometr = new LocalSejmometrCreator(chosenOption.getTerm()).createSejmometr();
             Representative representative = sejmometr.getRepresentativeWithTheMostExpensiveTrip();
-            return "Representative with the most expensive trip: " +
-                    representative.getName() + " (id=" + representative.getId() +
-                    ") (Chost of the trip: " + representative.getCostOfTheMostExpensiveTrip() + " zł)";
+            return "Representative with the most expensive trip: " + representative.toString() +
+                    " (Chost of the trip: " + representative.getCostOfTheMostExpensiveTrip() + " zł)";
+        } else if (this.chosenOption.equals(representativesVisitedCountry())) {
+            Sejmometr sejmometr = new LocalSejmometrCreator(chosenOption.getTerm()).createSejmometr();
+            ArrayList<Representative> representatives =
+                    sejmometr.getRepresentativesWhoVisitedCountry(chosenOption.getCountryCode());
+            return "Representatives who visited " + chosenOption.getCountryCode().getName() + " in "
+                    + chosenOption.getTerm() + " term: " + representatives;
         }
         return "";
     }
@@ -103,5 +113,12 @@ public class ChosenOptionInterpreter {
         return chosenOption;
     }
 
+    //example: "select representatives who visited Italy term 7"
+    private ChosenOption representativesVisitedCountry() {
+        ChosenOption chosenOption = new ChosenOption();
+        chosenOption.setStatement(Statements.SELECT);
+        chosenOption.setRepresentativeDetails(RepresentativesDetails.TripsToCOUNTRY);
+        return chosenOption;
+    }
 
 }
