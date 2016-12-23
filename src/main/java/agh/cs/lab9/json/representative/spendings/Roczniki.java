@@ -1,6 +1,7 @@
 
 package agh.cs.lab9.json.representative.spendings;
 
+import java.math.BigDecimal;
 import java.util.List;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
@@ -9,7 +10,7 @@ public class Roczniki {
 
     @SerializedName("pola")
     @Expose
-    private List<Double> pola = null;
+    private List<BigDecimal> pola = null;
     @SerializedName("dokument_id")
     @Expose
     private String dokumentId;
@@ -17,11 +18,11 @@ public class Roczniki {
     @Expose
     private int rok;
 
-    public List<Double> getPola() {
+    public List<BigDecimal> getPola() {
         return pola;
     }
 
-    public void setPola(List<Double> pola) {
+    public void setPola(List<BigDecimal> pola) {
         this.pola = pola;
     }
 
