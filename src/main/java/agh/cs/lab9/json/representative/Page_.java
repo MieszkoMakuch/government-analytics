@@ -1,4 +1,3 @@
-
 package agh.cs.lab9.json.representative;
 
 import com.google.gson.annotations.Expose;
@@ -11,18 +10,14 @@ public class Page_ {
     private Hits hits;
 
     /**
-     * 
-     * @return
-     *     The hits
+     * @return The hits
      */
     public Hits getHits() {
         return hits;
     }
 
     /**
-     * 
-     * @param hits
-     *     The hits
+     * @param hits The hits
      */
     public void setHits(Hits hits) {
         this.hits = hits;

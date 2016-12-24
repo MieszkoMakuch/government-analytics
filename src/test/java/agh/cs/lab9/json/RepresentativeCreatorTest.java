@@ -2,7 +2,7 @@ package agh.cs.lab9.json;
 
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 /**
  * Created by mieszkomakuch on 15.12.2016.

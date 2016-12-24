@@ -4,7 +4,7 @@ import agh.cs.lab9.json.LocalSejmometrCreator;
 import com.neovisionaries.i18n.CountryCode;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 /**
  * Created by mieszkomakuch on 23.12.2016.

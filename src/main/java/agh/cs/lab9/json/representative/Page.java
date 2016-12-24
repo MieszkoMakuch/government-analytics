@@ -1,4 +1,3 @@
-
 package agh.cs.lab9.json.representative;
 
 import com.google.gson.annotations.Expose;
@@ -14,36 +13,28 @@ public class Page {
     private Page_ page;
 
     /**
-     * 
-     * @return
-     *     The docCount
+     * @return The docCount
      */
     public Integer getDocCount() {
         return docCount;
     }
 
     /**
-     * 
-     * @param docCount
-     *     The doc_count
+     * @param docCount The doc_count
      */
     public void setDocCount(Integer docCount) {
         this.docCount = docCount;
     }
 
     /**
-     * 
-     * @return
-     *     The page
+     * @return The page
      */
     public Page_ getPage() {
         return page;
     }
 
     /**
-     * 
-     * @param page
-     *     The page
+     * @param page The page
      */
     public void setPage(Page_ page) {
         this.page = page;

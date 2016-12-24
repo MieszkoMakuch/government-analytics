@@ -14,20 +14,20 @@ public class SelectInterpreter extends AbstractInterpreter {
         super(chosenOption);
     }
 
-    public String interpret(){
-        if(this.chosenOption.equals(sumOfSpendingsOfRepresentativeWithSpecifiedName())){
+    public String interpret() {
+        if (this.chosenOption.equals(sumOfSpendingsOfRepresentativeWithSpecifiedName())) {
             Representative representative =
                     new LocalRepresentativeCreator(chosenOption.getRepresentative().getId()).createRepresentative();
-            return  representative.toStringS() + " spendings in " + chosenOption.getYear() + ": " +
+            return representative.toStringS() + " spendings in " + chosenOption.getYear() + ": " +
                     String.valueOf(representative.countSpendingsInYear(chosenOption.getYear())) + " zł";
-        } else if (this.chosenOption.equals(sumOfOfficeSpendingsOfRepresentativeWithSpecifiedName())){
+        } else if (this.chosenOption.equals(sumOfOfficeSpendingsOfRepresentativeWithSpecifiedName())) {
             Representative representative =
                     new LocalRepresentativeCreator(chosenOption.getRepresentative().getId()).createRepresentative();
-            return  representative.toStringS() + " office renovation spendings in " + chosenOption.getYear() + ": " +
+            return representative.toStringS() + " office renovation spendings in " + chosenOption.getYear() + ": " +
                     String.valueOf(representative.getOfficeRenovationSpendings(chosenOption.getYear())) + " zł";
-        } else if (this.chosenOption.equals(avgSpendingsIn2013())){
+        } else if (this.chosenOption.equals(avgSpendingsIn2013())) {
             Sejmometr sejmometr = new LocalSejmometrCreator(7).createSejmometr();
-            return  "Average representatives spendings in " + chosenOption.getYear() + ": "
+            return "Average representatives spendings in " + chosenOption.getYear() + ": "
                     + sejmometr.getAverageRepresentativesSpendings(chosenOption.getYear()) + " zł";
         } else if (this.chosenOption.equals(representativeWithMaxTrips())) {
             Sejmometr sejmometr = new LocalSejmometrCreator(chosenOption.getTerm()).createSejmometr();

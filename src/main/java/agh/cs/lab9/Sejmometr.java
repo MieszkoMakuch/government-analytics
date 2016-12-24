@@ -15,7 +15,7 @@ import java.util.Map;
  * Created by mieszkomakuch on 15.12.2016.
  */
 public class Sejmometr {
-    public final static int availableTerms[] = {7,8};
+    public final static int availableTerms[] = {7, 8};
     private final int term;
     private SejmometrAPI sejmometrAPI;
 
@@ -41,8 +41,8 @@ public class Sejmometr {
 
     public BigDecimal getAverageRepresentativesSpendings(int year) {
         BigDecimal sum = BigDecimal.ZERO;
-        for(Representative representative : representatives.values()) {
-            try{
+        for (Representative representative : representatives.values()) {
+            try {
                 sum = sum.add(representative.countSpendingsInYear(year));
             } catch (NoSpendingsDetailsInYearException e) {
                 System.out.println(e.getMessage());
@@ -51,11 +51,11 @@ public class Sejmometr {
         return sum.divide(new BigDecimal(representatives.size()), 2, RoundingMode.HALF_UP);
     }
 
-    public Representative getRepresentativeWithBiggestNoOfTripsAbroad(){
+    public Representative getRepresentativeWithBiggestNoOfTripsAbroad() {
         Representative result = null;
         int maxNoOfTrips = -1;
-        for(Representative representative : representatives.values()){
-            if(representative.getNumberOfTripsAbroad() > maxNoOfTrips){
+        for (Representative representative : representatives.values()) {
+            if (representative.getNumberOfTripsAbroad() > maxNoOfTrips) {
                 result = representative;
                 maxNoOfTrips = representative.getNumberOfTripsAbroad();
             }
@@ -63,11 +63,11 @@ public class Sejmometr {
         return result;
     }
 
-    public Representative getRepresentativeWithBiggestNoOfTripsInCountry(CountryCode countryCode){
+    public Representative getRepresentativeWithBiggestNoOfTripsInCountry(CountryCode countryCode) {
         Representative result = null;
         int maxNoOfTrips = -1;
-        for(Representative representative : representatives.values()){
-            if(representative.getNumberOfTripsInCountry(countryCode) > maxNoOfTrips){
+        for (Representative representative : representatives.values()) {
+            if (representative.getNumberOfTripsInCountry(countryCode) > maxNoOfTrips) {
                 result = representative;
                 maxNoOfTrips = representative.getNumberOfTripsInCountry(countryCode);
             }
@@ -75,11 +75,11 @@ public class Sejmometr {
         return result;
     }
 
-    public Representative getRepresentativeWithTheMostExpensiveTrip(){
+    public Representative getRepresentativeWithTheMostExpensiveTrip() {
         Representative result = null;
         double theMostExpensiveTrip = -1.0;
-        for(Representative representative : representatives.values()){
-            if(representative.getCostOfTheMostExpensiveTrip() > theMostExpensiveTrip){
+        for (Representative representative : representatives.values()) {
+            if (representative.getCostOfTheMostExpensiveTrip() > theMostExpensiveTrip) {
                 result = representative;
                 theMostExpensiveTrip = representative.getCostOfTheMostExpensiveTrip();
             }
@@ -87,29 +87,29 @@ public class Sejmometr {
         return result;
     }
 
-    public ArrayList<Representative> getRepresentativesWhoVisitedCountry(CountryCode countryCode){
+    public ArrayList<Representative> getRepresentativesWhoVisitedCountry(CountryCode countryCode) {
         ArrayList<Representative> result = new ArrayList<Representative>();
-        for(Representative representative : representatives.values()){
-            if(representative.getNumberOfTripsInCountry(countryCode) > 0){
+        for (Representative representative : representatives.values()) {
+            if (representative.getNumberOfTripsInCountry(countryCode) > 0) {
                 result.add(representative);
             }
         }
         return result;
     }
 
-    public ArrayList<String> getRepresentativesNames(){
+    public ArrayList<String> getRepresentativesNames() {
         ArrayList<String> representativesNames = new ArrayList<String>();
-        for(Representative representative : representatives.values()){
+        for (Representative representative : representatives.values()) {
             representativesNames.add(representative.getName());
         }
         return representativesNames;
     }
 
-    public Representative getRepresentativeWithTheBiggestNumberOfDaysAbroad(){
+    public Representative getRepresentativeWithTheBiggestNumberOfDaysAbroad() {
         Representative result = null;
         double biggestNoOfDaysAbroad = -1.0;
-        for(Representative representative : representatives.values()){
-            if(representative.getNumberOfDaysAbroad() > biggestNoOfDaysAbroad){
+        for (Representative representative : representatives.values()) {
+            if (representative.getNumberOfDaysAbroad() > biggestNoOfDaysAbroad) {
                 result = representative;
                 biggestNoOfDaysAbroad = representative.getNumberOfDaysAbroad();
             }

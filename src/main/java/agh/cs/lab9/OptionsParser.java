@@ -1,11 +1,6 @@
 package agh.cs.lab9;
 
-import agh.cs.lab9.json.LocalSejmometrCreator;
-import com.neovisionaries.i18n.CountryCode;
-
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
 /**
  * Created by mieszkomakuch on 22.12.2016.

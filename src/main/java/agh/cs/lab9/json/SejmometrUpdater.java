@@ -7,13 +7,13 @@ import java.util.ArrayList;
  * Created by mieszkomakuch on 21.12.2016.
  */
 public class SejmometrUpdater {
-    private final int term;
-    private ArrayList<FileUpdater> pagesJson;
     public static final String url = "https://api-v3.mojepanstwo.pl/dane/poslowie.json?conditions[poslowie.kadencja]=";
     public static final String extension = ".json";
     public static final String filesName = "sejmometr-page-";
     public static final String localFilesPath = "jsonLocalFiles/kadencja";
     public static final String representativeLocalFilesPath = "jsonLocalFiles/poslowie/";
+    private final int term;
+    private ArrayList<FileUpdater> pagesJson;
     private SejmometrCreator sejmometrCreator;
 
     public SejmometrUpdater(int term) {
@@ -34,13 +34,13 @@ public class SejmometrUpdater {
     }
 
     public void update() throws IOException {
-        System.out.println( "--------------------------------------------------\n" +
-                            " Updating Sejmometr files for term: " + this.term + "\n" +
-                            "--------------------------------------------------");
+        System.out.println("--------------------------------------------------\n" +
+                " Updating Sejmometr files for term: " + this.term + "\n" +
+                "--------------------------------------------------");
         for (FileUpdater pageJson : this.pagesJson) {
             pageJson.update();
         }
-        for (int representativeId : sejmometrCreator.getRepresentativesIds()){
+        for (int representativeId : sejmometrCreator.getRepresentativesIds()) {
             System.out.println(" Updating representative files id: " + representativeId);
             new RepresentativeUpdater(representativeId, representativeLocalFilesPath).updateAllFiles();
         }

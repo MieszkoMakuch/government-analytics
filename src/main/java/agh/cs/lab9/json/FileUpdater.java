@@ -26,7 +26,7 @@ public class FileUpdater {
         this.filePath = filePath;
     }
 
-    public void update() throws IOException{
+    public void update() throws IOException {
         URL website = new URL(url);
         ReadableByteChannel rbc = Channels.newChannel(website.openStream());
         FileOutputStream fos = new FileOutputStream(this.filePath + fileName);

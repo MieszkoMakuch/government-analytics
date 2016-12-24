@@ -6,7 +6,8 @@ package agh.cs.lab9;
 public enum RepresentativesDetails {
     TRIPS,
     TripsToCOUNTRY;
-    enum SPENDINGS{
+
+    enum SPENDINGS {
         ALL,
         OFFICE
     }

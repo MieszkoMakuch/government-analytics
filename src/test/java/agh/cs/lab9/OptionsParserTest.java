@@ -4,10 +4,9 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
 
-import java.lang.reflect.Member;
 import java.lang.reflect.Method;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 /**
  * Created by mieszkomakuch on 23.12.2016.
@@ -54,12 +53,12 @@ public class OptionsParserTest {
         assertEquals(152, chosenOption.getRepresentative().getId());
     }
 
-    public ChosenOption prepareChosenOptionWithReflection(String[] args, String methodName) throws Exception{
+    public ChosenOption prepareChosenOptionWithReflection(String[] args, String methodName) throws Exception {
         OptionsParser optionsParser = new OptionsParser(args);
         Method method = optionsParser.getClass().getDeclaredMethod(methodName, ChosenOption.class);
         method.setAccessible(true);
         ChosenOption chosenOption = new ChosenOption();
-        return  (ChosenOption)method.invoke(optionsParser, chosenOption);
+        return (ChosenOption) method.invoke(optionsParser, chosenOption);
     }
 
     @Test

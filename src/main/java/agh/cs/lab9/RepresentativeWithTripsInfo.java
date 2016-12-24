@@ -9,7 +9,7 @@ import com.neovisionaries.i18n.CountryCode;
 /**
  * Created by mieszkomakuch on 16.12.2016.
  */
-public class RepresentativeWithTripsInfo extends Representative{
+public class RepresentativeWithTripsInfo extends Representative {
 
     protected final RepresentativeTripsAPI representativeTripsAPI;
 
@@ -22,7 +22,7 @@ public class RepresentativeWithTripsInfo extends Representative{
 
     @Override
     public int getNumberOfTripsAbroad() {
-        return  this.numberOfTrips;
+        return this.numberOfTrips;
     }
 
     @Override
@@ -30,7 +30,7 @@ public class RepresentativeWithTripsInfo extends Representative{
         super.getNumberOfTripsInCountry(countryCode);
         int numberOfTravelsAbroad = 0;
         for (Wyjazdy wyjazd : representativeTripsAPI.getLayers().getWyjazdy()) {
-            if(wyjazd.getCountryCode().equals(countryCode)) {
+            if (wyjazd.getCountryCode().equals(countryCode)) {
                 numberOfTravelsAbroad++;
             }
         }
@@ -49,7 +49,7 @@ public class RepresentativeWithTripsInfo extends Representative{
 
     @Override
     protected int numberOfTripsWithMissingDetails() {
-        return  representativeTripsAPI.getData().getPoslowieLiczbaWyjazdow() -
+        return representativeTripsAPI.getData().getPoslowieLiczbaWyjazdow() -
                 representativeTripsAPI.getLayers().getWyjazdy().size();
     }
 
@@ -58,7 +58,7 @@ public class RepresentativeWithTripsInfo extends Representative{
         super.getCostOfTheMostExpensiveTrip();
         double maxCost = 0;
         for (Wyjazdy wyjazd : representativeTripsAPI.getLayers().getWyjazdy()) {
-            if(wyjazd.getKosztSuma() > maxCost) {
+            if (wyjazd.getKosztSuma() > maxCost) {
                 maxCost = wyjazd.getKosztSuma();
             }
         }

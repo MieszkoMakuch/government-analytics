@@ -1,7 +1,7 @@
 package agh.cs.lab9.json;
 
-import java.io.IOException;
 import java.io.File;
+import java.io.IOException;
 import java.util.Scanner;
 
 /**

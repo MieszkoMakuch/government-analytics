@@ -15,9 +15,9 @@ public class Representative {
 
     protected final int id;
     protected final String name;
-    protected int numberOfTrips;
     protected final RepresentativeAPI representativeAPI;
     protected final RepresentativeSpendingsAPI representativeSpendingsAPI;
+    protected int numberOfTrips;
 
     public Representative(RepresentativeAPI representativeAPI, RepresentativeSpendingsAPI representativeSpendingsAPI) {
         this.id = representativeAPI.getId();
@@ -44,7 +44,7 @@ public class Representative {
         return result;
     }
 
-    private Roczniki getYearSpendingsFromInt (int year) throws IllegalArgumentException{
+    private Roczniki getYearSpendingsFromInt(int year) throws IllegalArgumentException {
         List<Roczniki> yearsSpendingList = representativeSpendingsAPI.getLayers().getWydatki().getRoczniki();
         for (Roczniki rocznik : yearsSpendingList) {
             if (rocznik.getRok() == year) return rocznik;
@@ -53,7 +53,7 @@ public class Representative {
                 "(name: " + name + ", id=" + id + ")");
     }
 
-    public BigDecimal getOfficeRenovationSpendings (int year) {
+    public BigDecimal getOfficeRenovationSpendings(int year) {
         return getYearSpendingsFromInt(year).getPola().get(12);
     }
 
@@ -62,7 +62,7 @@ public class Representative {
     }
 
     public int getNumberOfTripsInCountry(CountryCode countryCode) {
-        if(this.numberOfTripsWithMissingDetails() > 0){
+        if (this.numberOfTripsWithMissingDetails() > 0) {
             System.out.println(missingTripInformationMessage() +
                     " Assuming that none of those tips took place in " + countryCode.getName() + ".");
         }
@@ -70,24 +70,24 @@ public class Representative {
     }
 
     public int getNumberOfDaysAbroad() {
-        if(this.numberOfTripsWithMissingDetails() > 0){
+        if (this.numberOfTripsWithMissingDetails() > 0) {
             System.out.println(missingTripInformationMessage() + " Assuming that those trip(s) had 0 days.");
         }
         return 0;
     }
 
     public Double getCostOfTheMostExpensiveTrip() {
-        if(this.numberOfTripsWithMissingDetails() > 0){
+        if (this.numberOfTripsWithMissingDetails() > 0) {
             System.out.println(missingTripInformationMessage() + " Assuming that those trip(s) cost 0 zł.");
         }
         return 0.0;
     }
 
-    protected int numberOfTripsWithMissingDetails(){
+    protected int numberOfTripsWithMissingDetails() {
         return this.numberOfTrips;
     }
 
-    protected String missingTripInformationMessage(){
+    protected String missingTripInformationMessage() {
         return "Missing information about " + numberOfTripsWithMissingDetails() + " " + this.toStringS() + " trip(s).";
     }
 

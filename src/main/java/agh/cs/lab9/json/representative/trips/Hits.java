@@ -1,9 +1,9 @@
-
 package agh.cs.lab9.json.representative.trips;
 
-import java.util.List;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
+
+import java.util.List;
 
 public class Hits {
 

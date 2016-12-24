@@ -12,8 +12,8 @@ import com.google.gson.JsonSyntaxException;
  * Created by mieszkomakuch on 15.12.2016.
  */
 public class RepresentativeCreator extends AbstractCreator {
-    protected int id;
     protected final String url;
+    protected int id;
 
     public RepresentativeCreator(String url, int id) {
         this.url = url;
@@ -21,14 +21,14 @@ public class RepresentativeCreator extends AbstractCreator {
     }
 
     protected String getUrl() {
-        return url  + id + RepresentativeUpdater.extension;
+        return url + id + RepresentativeUpdater.extension;
     }
 
     protected String getTripsUrl() {
         return getUrl() + RepresentativeUpdater.layersInUrl + RepresentativeUpdater.tripsInUrl;
     }
 
-    protected String getSpendingsUrl(){
+    protected String getSpendingsUrl() {
         return getUrl() + RepresentativeUpdater.layersInUrl + RepresentativeUpdater.spendingsInUrl;
     }
 
@@ -46,7 +46,7 @@ public class RepresentativeCreator extends AbstractCreator {
         RepresentativeAPI representativeAPI = gson.fromJson(jsonRepresentativeAPI, RepresentativeAPI.class);
         RepresentativeSpendingsAPI representativeSpendingsAPI = gson.fromJson(jsonRepresentativeSpendingsAPI, RepresentativeSpendingsAPI.class);
 
-        if(representativeAPI.getData().getPoslowieLiczbaWyjazdow() > 0) {
+        if (representativeAPI.getData().getPoslowieLiczbaWyjazdow() > 0) {
             String jsonRepresentativeTripsAPI = null;
             try {
                 jsonRepresentativeTripsAPI = getJSON(this.getTripsUrl());

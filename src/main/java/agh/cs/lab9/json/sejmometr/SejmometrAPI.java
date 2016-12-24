@@ -1,4 +1,3 @@
-
 package agh.cs.lab9.json.sejmometr;
 
 import com.google.gson.annotations.Expose;
@@ -22,72 +21,56 @@ public class SejmometrAPI {
     private Links links;
 
     /**
-     * 
-     * @return
-     *     The dataobject
+     * @return The dataobject
      */
     public List<Dataobject> getDataobject() {
         return dataobject;
     }
 
     /**
-     * 
-     * @param dataobject
-     *     The Dataobject
+     * @param dataobject The Dataobject
      */
     public void setDataobject(List<Dataobject> dataobject) {
         this.dataobject = dataobject;
     }
 
     /**
-     * 
-     * @return
-     *     The count
+     * @return The count
      */
     public Integer getCount() {
         return count;
     }
 
     /**
-     * 
-     * @param count
-     *     The Count
+     * @param count The Count
      */
     public void setCount(Integer count) {
         this.count = count;
     }
 
     /**
-     * 
-     * @return
-     *     The took
+     * @return The took
      */
     public Integer getTook() {
         return took;
     }
 
     /**
-     * 
-     * @param took
-     *     The Took
+     * @param took The Took
      */
     public void setTook(Integer took) {
         this.took = took;
     }
 
     /**
-     * 
-     * @return
-     *     The links
+     * @return The links
      */
     public Links getLinks() {
         return links;
     }
 
     /**
-     * 
-     * @param links
-     *     The Links
+     * @param links The Links
      */
     public void setLinks(Links links) {
         this.links = links;

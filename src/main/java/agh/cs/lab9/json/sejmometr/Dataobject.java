@@ -1,4 +1,3 @@
-
 package agh.cs.lab9.json.sejmometr;
 
 import com.google.gson.annotations.Expose;
@@ -35,162 +34,126 @@ public class Dataobject {
     private Data data;
 
     /**
-     * 
-     * @return
-     *     The id
+     * @return The id
      */
     public int getId() {
         return id;
     }
 
     /**
-     * 
-     * @param id
-     *     The id
+     * @param id The id
      */
     public void setId(int id) {
         this.id = id;
     }
 
     /**
-     * 
-     * @return
-     *     The dataset
+     * @return The dataset
      */
     public String getDataset() {
         return dataset;
     }
 
     /**
-     * 
-     * @param dataset
-     *     The dataset
+     * @param dataset The dataset
      */
     public void setDataset(String dataset) {
         this.dataset = dataset;
     }
 
     /**
-     * 
-     * @return
-     *     The url
+     * @return The url
      */
     public String getUrl() {
         return url;
     }
 
     /**
-     * 
-     * @param url
-     *     The url
+     * @param url The url
      */
     public void setUrl(String url) {
         this.url = url;
     }
 
     /**
-     * 
-     * @return
-     *     The mpUrl
+     * @return The mpUrl
      */
     public String getMpUrl() {
         return mpUrl;
     }
 
     /**
-     * 
-     * @param mpUrl
-     *     The mp_url
+     * @param mpUrl The mp_url
      */
     public void setMpUrl(String mpUrl) {
         this.mpUrl = mpUrl;
     }
 
     /**
-     * 
-     * @return
-     *     The schemaUrl
+     * @return The schemaUrl
      */
     public String getSchemaUrl() {
         return schemaUrl;
     }
 
     /**
-     * 
-     * @param schemaUrl
-     *     The schema_url
+     * @param schemaUrl The schema_url
      */
     public void setSchemaUrl(String schemaUrl) {
         this.schemaUrl = schemaUrl;
     }
 
     /**
-     * 
-     * @return
-     *     The globalId
+     * @return The globalId
      */
     public String getGlobalId() {
         return globalId;
     }
 
     /**
-     * 
-     * @param globalId
-     *     The global_id
+     * @param globalId The global_id
      */
     public void setGlobalId(String globalId) {
         this.globalId = globalId;
     }
 
     /**
-     * 
-     * @return
-     *     The slug
+     * @return The slug
      */
     public String getSlug() {
         return slug;
     }
 
     /**
-     * 
-     * @param slug
-     *     The slug
+     * @param slug The slug
      */
     public void setSlug(String slug) {
         this.slug = slug;
     }
 
     /**
-     * 
-     * @return
-     *     The score
+     * @return The score
      */
     public Object getScore() {
         return score;
     }
 
     /**
-     * 
-     * @param score
-     *     The score
+     * @param score The score
      */
     public void setScore(Object score) {
         this.score = score;
     }
 
     /**
-     * 
-     * @return
-     *     The data
+     * @return The data
      */
     public Data getData() {
         return data;
     }
 
     /**
-     * 
-     * @param data
-     *     The data
+     * @param data The data
      */
     public void setData(Data data) {
         this.data = data;

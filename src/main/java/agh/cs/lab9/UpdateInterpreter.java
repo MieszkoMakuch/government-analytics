@@ -1,6 +1,5 @@
 package agh.cs.lab9;
 
-import agh.cs.lab9.json.LocalRepresentativeCreator;
 import agh.cs.lab9.json.RepresentativeUpdater;
 import agh.cs.lab9.json.SejmometrUpdater;
 
@@ -17,15 +16,16 @@ public class UpdateInterpreter extends AbstractInterpreter {
     public String interpret() {
         if (this.chosenOption.equals(updateSejmometrTermNo())) {
             String result = "Updating representatives files from " + chosenOption.getTerm() + " term\n";
-            try{
+            try {
                 new SejmometrUpdater(chosenOption.getTerm()).update();
             } catch (IOException e) {
                 return result + e.getMessage();
             }
             return result + "Update process finished successfully";
-        } if (this.chosenOption.equals(updateRepresentative())) {
+        }
+        if (this.chosenOption.equals(updateRepresentative())) {
             String result = "Updating " + chosenOption.getRepresentative().toStringS() + " files";
-            try{
+            try {
                 new RepresentativeUpdater(chosenOption.getRepresentative().getId(),
                         SejmometrUpdater.representativeLocalFilesPath).updateAllFiles();
             } catch (IOException e) {

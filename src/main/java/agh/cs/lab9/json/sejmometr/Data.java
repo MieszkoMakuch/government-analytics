@@ -1,4 +1,3 @@
-
 package agh.cs.lab9.json.sejmometr;
 
 import com.google.gson.annotations.Expose;

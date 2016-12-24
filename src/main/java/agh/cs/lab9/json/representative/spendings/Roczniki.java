@@ -1,10 +1,10 @@
-
 package agh.cs.lab9.json.representative.spendings;
+
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
 
 import java.math.BigDecimal;
 import java.util.List;
-import com.google.gson.annotations.Expose;
-import com.google.gson.annotations.SerializedName;
 
 public class Roczniki {
 

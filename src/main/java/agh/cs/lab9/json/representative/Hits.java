@@ -1,4 +1,3 @@
-
 package agh.cs.lab9.json.representative;
 
 import com.google.gson.annotations.Expose;
@@ -19,54 +18,42 @@ public class Hits {
     private List<Object> hits = null;
 
     /**
-     * 
-     * @return
-     *     The total
+     * @return The total
      */
     public Integer getTotal() {
         return total;
     }
 
     /**
-     * 
-     * @param total
-     *     The total
+     * @param total The total
      */
     public void setTotal(Integer total) {
         this.total = total;
     }
 
     /**
-     * 
-     * @return
-     *     The maxScore
+     * @return The maxScore
      */
     public Object getMaxScore() {
         return maxScore;
     }
 
     /**
-     * 
-     * @param maxScore
-     *     The max_score
+     * @param maxScore The max_score
      */
     public void setMaxScore(Object maxScore) {
         this.maxScore = maxScore;
     }
 
     /**
-     * 
-     * @return
-     *     The hits
+     * @return The hits
      */
     public List<Object> getHits() {
         return hits;
     }
 
     /**
-     * 
-     * @param hits
-     *     The hits
+     * @param hits The hits
      */
     public void setHits(List<Object> hits) {
         this.hits = hits;

@@ -1,4 +1,3 @@
-
 package agh.cs.lab9.json.representative;
 
 import com.google.gson.annotations.Expose;
@@ -11,18 +10,14 @@ public class Aggs {
     private Page page;
 
     /**
-     * 
-     * @return
-     *     The page
+     * @return The page
      */
     public Page getPage() {
         return page;
     }
 
     /**
-     * 
-     * @param page
-     *     The _page
+     * @param page The _page
      */
     public void setPage(Page page) {
         this.page = page;

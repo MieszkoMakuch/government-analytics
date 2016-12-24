@@ -1,15 +1,13 @@
 package agh.cs.lab9;
 
 import agh.cs.lab9.json.LocalSejmometrCreator;
-import agh.cs.lab9.json.SejmometrCreator;
 import com.neovisionaries.i18n.CountryCode;
 import org.junit.Test;
 
 import java.io.PrintWriter;
-import java.math.BigDecimal;
 import java.util.ArrayList;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 /**
  * Created by mieszkomakuch on 17.12.2016.

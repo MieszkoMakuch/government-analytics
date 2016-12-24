@@ -12,10 +12,10 @@ import java.util.List;
  * Created by mieszkomakuch on 15.12.2016.
  */
 public class SejmometrCreator extends AbstractCreator {
-    boolean usingLocalFiles;
     protected String url;
     protected int term;
     protected ArrayList<String> pagesUrls = new ArrayList<String>();
+    boolean usingLocalFiles;
     SejmometrAPI sejmometrAPI;
 
     public SejmometrCreator(String url, int term) {
@@ -25,7 +25,9 @@ public class SejmometrCreator extends AbstractCreator {
         sejmometrAPI = createMainSejmometrApiClass();
     }
 
-    protected String getUrl() {return url + term;}
+    protected String getUrl() {
+        return url + term;
+    }
 
     public Sejmometr createSejmometr() {
         return new Sejmometr(sejmometrAPI, this.term);
@@ -37,7 +39,7 @@ public class SejmometrCreator extends AbstractCreator {
         return parseNextPages(sejmometrAPI);
     }
 
-    protected SejmometrAPI createSingleSejmometrAPIClassFromUrl (String url) {
+    protected SejmometrAPI createSingleSejmometrAPIClassFromUrl(String url) {
         String jsonSejmometrAPI = null;
         try {
             jsonSejmometrAPI = getJSON(url);
@@ -70,7 +72,7 @@ public class SejmometrCreator extends AbstractCreator {
         return this.pagesUrls;
     }
 
-    public ArrayList<Integer> getRepresentativesIds(){
+    public ArrayList<Integer> getRepresentativesIds() {
         ArrayList<Integer> representativesIds = new ArrayList<Integer>();
         for (Dataobject dataobject : sejmometrAPI.getDataobject()) {
             representativesIds.add(dataobject.getId());
