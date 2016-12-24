@@ -11,11 +11,12 @@ public class ChosenOption {
     private RepresentativesDetails.SPENDINGS representativeDetailsSpendings = null;
     private Aggregates aggregate = null;
 
-    private String representativeName = null;
-    private int representativeId = -1;
+    private Representative representative = null;
     private int year = -1;
     private int term = -1;
     private CountryCode countryCode = null;
+
+    private UpdateSets updateSet = null;
 
     public ChosenOption() {
     }
@@ -52,20 +53,12 @@ public class ChosenOption {
         this.aggregate = aggregate;
     }
 
-    public String getRepresentativeName() {
-        return representativeName;
+    public Representative getRepresentative() {
+        return representative;
     }
 
-    public void setRepresentativeName(String representativeName) {
-        this.representativeName = representativeName;
-    }
-
-    public int getRepresentativeId() {
-        return representativeId;
-    }
-
-    public void setRepresentativeId(int representativeId) {
-        this.representativeId = representativeId;
+    public void setRepresentative(Representative representative) {
+        this.representative = representative;
     }
 
     public int getYear() {
@@ -92,6 +85,14 @@ public class ChosenOption {
         this.countryCode = countryCode;
     }
 
+    public UpdateSets getUpdateSet() {
+        return updateSet;
+    }
+
+    public void setUpdateSet(UpdateSets updateSet) {
+        this.updateSet = updateSet;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -102,7 +103,8 @@ public class ChosenOption {
         if (statement != that.statement) return false;
         if (representativeDetails != that.representativeDetails) return false;
         if (representativeDetailsSpendings != that.representativeDetailsSpendings) return false;
-        return aggregate == that.aggregate;
+        if (aggregate != that.aggregate) return false;
+        return updateSet == that.updateSet;
     }
 
     @Override
@@ -111,6 +113,22 @@ public class ChosenOption {
         result = 31 * result + (representativeDetails != null ? representativeDetails.hashCode() : 0);
         result = 31 * result + (representativeDetailsSpendings != null ? representativeDetailsSpendings.hashCode() : 0);
         result = 31 * result + (aggregate != null ? aggregate.hashCode() : 0);
+        result = 31 * result + (updateSet != null ? updateSet.hashCode() : 0);
         return result;
+    }
+
+    @Override
+    public String toString() {
+        return "ChosenOption{" +
+                "statement=" + statement +
+                ", representativeDetails=" + representativeDetails +
+                ", representativeDetailsSpendings=" + representativeDetailsSpendings +
+                ", aggregate=" + aggregate +
+                ", representative=" + representative +
+                ", year=" + year +
+                ", term=" + term +
+                ", countryCode=" + countryCode +
+                ", updateSet=" + updateSet +
+                '}';
     }
 }
