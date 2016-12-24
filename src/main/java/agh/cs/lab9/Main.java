@@ -1,5 +1,4 @@
 package agh.cs.lab9;
-import java.io.IOException;
 
 
 /**
@@ -11,7 +10,7 @@ public class Main {
         try {
             OptionsParser optionsParser = new OptionsParser(args);
             ChosenOptionInterpreter chosenOptionInterpreter = new ChosenOptionInterpreter(optionsParser.getChosenOption());
-            System.out.println(chosenOptionInterpreter.interpret());
+            System.out.println(chosenOptionInterpreter.getInterpretResult());
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
