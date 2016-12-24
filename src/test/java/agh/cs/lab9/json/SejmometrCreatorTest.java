@@ -15,10 +15,4 @@ public class SejmometrCreatorTest {
         assertEquals("https://api-v3.mojepanstwo.pl/dane/poslowie.json?conditions[poslowie.kadencja]=7",
                 sejmometrDataGetter.getUrl());
     }
-
-    @Test
-    public void getAPI() throws Exception {
-
-    }
-
 }
