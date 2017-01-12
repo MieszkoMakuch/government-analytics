@@ -71,7 +71,7 @@ public class Representative {
 
     public int getNumberOfDaysAbroad() {
         if (this.numberOfTripsWithMissingDetails() > 0) {
-            System.out.println(missingTripInformationMessage() + " Assuming that those trip(s) had 0 days.");
+            System.out.println(missingTripInformationMessage() + " Assuming that those trip(s) lasted 0 days.");
         }
         return 0;
     }
