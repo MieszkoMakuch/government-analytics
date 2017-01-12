@@ -1,5 +1,8 @@
-package agh.cs.lab9;
+package agh.cs.lab9.parser;
 
+import agh.cs.lab9.parser.ChosenOption;
+import agh.cs.lab9.parser.UpdateParser;
+import agh.cs.lab9.parser.UpdateSets;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;

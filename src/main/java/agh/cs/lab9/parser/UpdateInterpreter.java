@@ -1,4 +1,4 @@
-package agh.cs.lab9;
+package agh.cs.lab9.parser;
 
 import agh.cs.lab9.json.RepresentativeUpdater;
 import agh.cs.lab9.json.SejmometrUpdater;

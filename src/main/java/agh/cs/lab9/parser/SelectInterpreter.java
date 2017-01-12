@@ -1,5 +1,7 @@
-package agh.cs.lab9;
+package agh.cs.lab9.parser;
 
+import agh.cs.lab9.Representative;
+import agh.cs.lab9.Sejmometr;
 import agh.cs.lab9.json.LocalRepresentativeCreator;
 import agh.cs.lab9.json.LocalSejmometrCreator;
 

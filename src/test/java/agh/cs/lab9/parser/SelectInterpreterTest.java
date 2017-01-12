@@ -1,6 +1,10 @@
-package agh.cs.lab9;
+package agh.cs.lab9.parser;
 
+import agh.cs.lab9.Sejmometr;
 import agh.cs.lab9.json.LocalSejmometrCreator;
+import agh.cs.lab9.parser.ChosenOption;
+import agh.cs.lab9.parser.OptionsParser;
+import agh.cs.lab9.parser.SelectInterpreter;
 import com.neovisionaries.i18n.CountryCode;
 import org.junit.Test;
 
@@ -95,6 +99,7 @@ public class SelectInterpreterTest {
         assertEquals("Representative with the biggest number of trips: " +
                         "Tadeusz Iwiński (id=134) (Number of trips: 72)",
                 new SelectInterpreter(chosenOption).interpret());
+
 
     }
 

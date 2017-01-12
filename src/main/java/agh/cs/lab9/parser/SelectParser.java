@@ -1,4 +1,4 @@
-package agh.cs.lab9;
+package agh.cs.lab9.parser;
 
 import com.neovisionaries.i18n.CountryCode;
 

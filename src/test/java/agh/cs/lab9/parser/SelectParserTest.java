@@ -1,5 +1,6 @@
-package agh.cs.lab9;
+package agh.cs.lab9.parser;
 
+import agh.cs.lab9.parser.*;
 import org.junit.Test;
 
 import java.lang.reflect.Method;
