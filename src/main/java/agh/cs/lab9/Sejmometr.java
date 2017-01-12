@@ -27,6 +27,15 @@ public class Sejmometr {
         mapAllRepresentatives(sejmometrAPI);
     }
 
+    public static boolean isThisTermAvialable(int term) {
+        for (int i : availableTerms) {
+            if (i == term) {
+                return true;
+            }
+        }
+        return false;
+    }
+
     private void mapAllRepresentatives(SejmometrAPI sejmometrAPI) {
         for (Dataobject dataobject : sejmometrAPI.getDataobject()) {
             int id = dataobject.getId();

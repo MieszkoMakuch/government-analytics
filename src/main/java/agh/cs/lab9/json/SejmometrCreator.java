@@ -6,6 +6,7 @@ import agh.cs.lab9.json.sejmometr.SejmometrAPI;
 import com.google.gson.Gson;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -22,6 +23,10 @@ public class SejmometrCreator extends AbstractCreator {
         boolean usingLocalFiles = false;
         this.url = url;
         this.term = term;
+
+        if (!Sejmometr.isThisTermAvialable(term)) {
+            throw new IllegalArgumentException("Missing information about " + this.term + " term.");
+        }
         sejmometrAPI = createMainSejmometrApiClass();
     }
 
