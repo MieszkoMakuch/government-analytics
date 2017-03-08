@@ -68,14 +68,4 @@ public class SejmometrTest {
         assertEquals("141090.07", sejmometr2.getAverageRepresentativesSpendings(2013).toString());
     }
 
-    @Test
-    public void toStringTest() throws Exception {
-        Sejmometr sejmometr = new LocalSejmometrCreator(7).createSejmometr();
-        System.out.println(sejmometr.toString());
-
-        PrintWriter zapis = new PrintWriter("sejmometrAllPages.txt");
-        zapis.println(sejmometr.toString());
-        zapis.close();
-    }
-
 }
