@@ -1,1 +1,183 @@
-{"id":"431","dataset":"poslowie","url":"https:\/\/api-v3.mojepanstwo.pl\/dane\/poslowie\/431","mp_url":"https:\/\/mojepanstwo.pl\/dane\/poslowie\/431","schema_url":"https:\/\/api-v3.mojepanstwo.pl\/schemas\/dane\/poslowie.json","global_id":"1556932","slug":"wojcik-marek","score":null,"data":{"ludzie.id":"428","ludzie.nazwa":"Marek W\u00f3jcik","ludzie.slug":"marek-wojcik","sejm_kluby.id":"1","sejm_kluby.skrot":"PO","sejm_kluby.nazwa":"Platforma Obywatelska","poslowie.wartosc_biuro_inne":680,"poslowie.wartosc_biuro_ekspertyzy":0,"poslowie.wartosc_biuro_materialy_biurowe":2683.86,"poslowie.frekwencja":99.8,"poslowie.mandat_wygasl":"0","poslowie.wartosc_biuro_taksowki":0,"poslowie.sejm_okreg_id":"31","poslowie.liczba_przelotow":48,"poslowie.wartosc_biuro_zlecenia":26031.49,"poslowie.liczba_projektow_uchwal":6,"poslowie.imiona":"Marek","poslowie.biuro_html":"<table><thead><th class=\"left\">Wydatkowanie kwoty rycza\u0142tu przeznaczonego na prowadzenie biura poselskiego:<\/th><\/thead><tbody><tr><td class=\"left\">Sprawozdanie za <A class=\"pdf right\" HREF=\"http:\/\/orka.sejm.gov.pl\/rozlicz7.nsf\/lista\/2011434\/$File\/2011ryczalt_434.pdf?OpenElement\" target=\"_blank\">2011 rok<\/A><\/td><\/tr><tr><td class=\"left\">Sprawozdanie za <A class=\"pdf right\" HREF=\"http:\/\/orka.sejm.gov.pl\/rozlicz7.nsf\/lista\/2012434\/$File\/2012ryczalt_434.pdf?OpenElement\" target=\"_blank\">2012 rok<\/A><\/td><\/tr><tr><td class=\"left\">Sprawozdanie za <A class=\"pdf right\" HREF=\"http:\/\/orka.sejm.gov.pl\/rozlicz7.nsf\/lista\/2013434\/$File\/2013ryczalt_434.pdf?OpenElement\" target=\"_blank\">2013 rok<\/A><\/td><\/tr><tr><td class=\"left\">Sprawozdanie za <A class=\"pdf right\" HREF=\"http:\/\/orka.sejm.gov.pl\/rozlicz7.nsf\/lista\/2014434\/$File\/2014ryczalt_434.pdf?OpenElement\" target=\"_blank\">2014 rok<\/A><\/td><\/tr><tr><td class=\"left\">Rozliczenie za <A class=\"pdf right\" HREF=\"http:\/\/orka.sejm.gov.pl\/rozlicz7.nsf\/lista\/2015434\/$File\/2015ryczalt_434.pdf?OpenElement\" target=\"_blank\">okres sprawowania mandatu <\/A><\/td><\/tr><\/tbody><\/table>","poslowie.wartosc_biuro_wynagrodzenia_pracownikow":34165.32,"poslowie.numer_legitymacji":434,"poslowie.imie_pierwsze":"Marek","poslowie.liczba_glosow":10753,"poslowie.procent_glosow":2.67,"poslowie.pkw_komitet_id":"3","poslowie.wartosc_uposazenia_pln":9892.3,"poslowie.zawod":"prawnik","poslowie.data_urodzenia":"1980-03-24","poslowie.okreg_gminy_str":"Katowice, Ruda \u015al\u0105ska, Tychy","poslowie.imie_drugie":"Krzysztof","poslowie.kadencja_ostatnia":"8","poslowie.wartosc_biuro_spotkania":0,"poslowie.liczba_glosowan_zbuntowanych":12,"poslowie.klub_id":"1","poslowie.liczba_komisji":2,"poslowie.wartosc_wyjazdow":18878.88,"poslowie.zbuntowanie":0.2,"poslowie.nazwa_odwrocona":"W\u00f3jcik Marek","poslowie.twitter_account_id":"50","poslowie.wartosc_biuro_przejazdy":25901.44,"poslowie.liczba_glosowan_opuszczonych":10,"poslowie.plec":"M","poslowie.kadencja":[7,8],"poslowie.id":"431","poslowie.wartosc_refundacja_kwater_pln":0,"poslowie.liczba_interpelacji":40,"poslowie.nazwa":"Marek W\u00f3jcik","poslowie.dopelniacz":"Marka W\u00f3jcika","poslowie.wartosc_biuro_telekomunikacja":5286.95,"poslowie.liczba_uchwal_komisji_etyki":0,"poslowie.nazwisko":"W\u00f3jcik","poslowie.wartosc_biuro_biuro":34936.73,"poslowie.miejsce_urodzenia":"Katowice","poslowie.wartosc_biuro_podroze_pracownikow":0,"poslowie.krs_osoba_id":"872540","poslowie.liczba_podkomisji":2,"poslowie.liczba_przejazdow":112,"poslowie.numer_na_liscie":5,"poslowie.rozliczenie_id":"274127","poslowie.pkw_nr_listy":"0","poslowie.liczba_wyjazdow":1,"poslowie.liczba_wypowiedzi":75,"poslowie.liczba_projektow_ustaw":38,"poslowie.liczba_glosowan":6174,"poslowie.liczba_wnioskow":2,"poslowie.miejsce_zamieszkania":"Katowice","poslowie.mowca_id":"428","poslowie.okreg_wyborczy_numer":"31","poslowie.liczba_slow":39464,"poslowie.wartosc_biuro_srodki_trwale":1019.99},"layers":{"dataset":null,"channels":null,"page":null,"subscribers":null,"krs":{"biznes":[],"ngo":[{"organizacja":{"id":"236501","nazwa":"STOWARZYSZENIE EUROPA JEST PROSTA","forma_prawna_str":"STOWARZYSZENIE","kapital_zakladowy":"0.00","cel_dzialania":"","data_rejestracji":"2005-06-21"},"rola":{"id":"766014","label":"WICEPREZES","deleted":"0"},"forma":{"typ_id":"2"}},{"organizacja":{"id":"33191","nazwa":"FUNDACJA IMIENIA MARIANA BUBLEWICZA","forma_prawna_str":"FUNDACJA","kapital_zakladowy":"0.00","cel_dzialania":"1.DZIA\u0141ANIE NA RZECZ POPRAWY POZIOMU BEZPIECZE\u0143STWA NA POLSKICH DROGACH. 2.POPULARYZACJA IDEI BEZPIECZNEJ JAZDY PRZEZ ZMOTORYZOWANYCH I BEZPIECZNEGO ZACHOWANIA SI\u0118 PIESZYCH. 3.PODNOSZENIE UMIEJ\u0118TNO\u015aCI BEZPIECZNEGO PROWADZENIA POJAZD\u00d3W MECHANICZNYCH W\u015aR\u00d3D KIEROWC\u00d3W. 4.UPOWSZECHNIANIE POTRZEBY KSZTA\u0141TOWANIA W\u0141A\u015aCIWYCH RELACJI MI\u0118DZY POSZCZEG\u00d3LNYMI UCZESTNIKAMI RUCHU DROGOWEGO. 5.DZIA\u0141ANIA NA RZECZ USTANAWIANIA PROGRAM\u00d3W KSZTA\u0141TOWANIA BEZPIECZE\u0143STWA RUCHU DROGOWEGO (BRD). 6.DZIA\u0141ANIA NA RZECZ BUDOWY SIECI NOWOCZESNYCH DR\u00d3G W POLSCE. 7.WSPIERANIE KOOPERACJI POMI\u0118DZY INSTYTUCJAMI I FIRMAMI PROPAGUJ\u0104CYMI PROBLEMATYK\u0118 BEZPIECZE\u0143STWA RUCHU DROGOWEGO. 8.WSPIERANIE INICJATYW SAMORZ\u0104DOWYCH NA RZECZ LOKALNEGO ROZWOJU BRD. 9.WSPIERANIE DZIA\u0141A\u0143 W ZAKRESIE POZYSKIWANIA \u015aRODK\u00d3W FINANSOWYCH NA RZECZ BRD Z FUNDUSZY UNII EUROPEJSKIEJ. 10.ROZW\u00d3J I PROMOCJA SPORTU SAMOCHODOWEGO W POLSCE ORAZ SPORTU POWSZECHNEGO I KWALIFIKOWANEGO DZIECI I M\u0141ODZIE\u017bY ORAZ INNYCH OS\u00d3B, A TAK\u017bE PROMOWANIE ZDROWEGO TRYBU \u017bYCIA. 11.WSPIERANIE FINANSOWE SZKO\u0141Y MISTRZOSTWA SPORTOWEGO IM. MARIANA GRZEGORZA BUBLEWICZA W OLSZTYNIE. 12.DZIA\u0141ALNO\u015a\u0106 CHARYTATYWNA.","data_rejestracji":"2001-08-03"},"rola":{"id":"447215","deleted":"0","label":"Cz\u0142onek organu nadzoru"},"forma":{"typ_id":"2"}},{"organizacja":{"id":"15337","nazwa":"STOWARZYSZENIE EUROPEJSKIE \"EUROENTUZJA\u015aCI\"W LIKWIDACJI","forma_prawna_str":"STOWARZYSZENIE","kapital_zakladowy":"0.00","cel_dzialania":"A\/ROZWIJANIE I PROPAGOWANIE INICJATYW, POSTAW I DZIA\u0141A\u0143 SPRZYJAJ\u0104CYCH SZERZENIU WIEDZY O WSP\u00d3LNOTACH EUROPEJSKICH \/UNII EUROPEJSKIEJ\/ I ICH INSTYTUCJACH ORAZ INTEGRACJI POLSKI Z ICH STRUKTURAMI, B\/PROMOWANIE ZAUFANIA I SZACUNKU DO IDEI INTEGRACJI EUROPEJSKIEJ, C\/UPOWSZECHNIANE WIEDZY O ZASADACH FUNKCJONOWANIA I ZADANIACH ORGAN\u00d3W INSTYTUCJI EUROPEJSKICH, D\/GROMADZENIE I UPOWSZECHNIANIE DO\u015aWIADCZE\u0143 ZWI\u0104ZANYCH Z PROCESAMI INTEGRACJI, E\/U\u0141ATWIANIE KONTAKTU Z INSTYTUCJAMI I ORGANIZACJAMI MI\u0118DZYNARODOWYMI, F\/PRZYCZYNIANIE SI\u0118 DO ROZWOJU \u015aWIADOMO\u015aCI OBYWATELI PA\u0143STWA POLSKIEGO W ZAKRESIE INTEGRACJI EUROPY, G\/WSPIERANIE ORGANIZACYJNE I RZECZOWE OS\u00d3B FIZYCZNYCH, STOWARZYSZE\u0143, FUNDACJI, JEDNOSTEK ORGANIZACYJNYCH I ORGANIZACJI POLITYCZNYCH, KT\u00d3RE PODEJMUJ\u0104 TAKIE DZIA\u0141ANIA.","data_rejestracji":"2001-05-29"},"rola":{"id":"14159","deleted":"0","label":"Za\u0142o\u017cyciel"},"forma":{"typ_id":"2"}}]},"wyjazdy":[{"country_code":"US","delegacja":"Konferencja parlamentarna dot. zwalczania terroryzmu","kraj":"USA","miasto":"Waszyngton","id":"747","wniosek_nr":"250\/14","liczba_dni":"5","od":"2014-09-17","do":"2014-09-21","koszt_transport":"14979.68","koszt_dieta":"800.30","koszt_hotel":"3005.84","koszt_dojazd":"0.00","koszt_ubezpieczenie":"85.85","koszt_fundusz":"0.00","koszt_kurs":"-7.21","koszt_zaliczki":"0.00","koszt_suma":"18878.88"}]},"Aggs":{"_page":{"doc_count":0,"page":{"hits":{"total":0,"max_score":null,"hits":[]}}}}}
+{
+  "id": "431",
+  "dataset": "poslowie",
+  "url": "https:\/\/api-v3.mojepanstwo.pl\/dane\/poslowie\/431",
+  "mp_url": "https:\/\/mojepanstwo.pl\/dane\/poslowie\/431",
+  "schema_url": "https:\/\/api-v3.mojepanstwo.pl\/schemas\/dane\/poslowie.json",
+  "global_id": "1556932",
+  "slug": "wojcik-marek",
+  "score": null,
+  "data": {
+    "ludzie.id": "428",
+    "ludzie.nazwa": "Marek W\u00f3jcik",
+    "ludzie.slug": "marek-wojcik",
+    "sejm_kluby.id": "1",
+    "sejm_kluby.skrot": "PO",
+    "sejm_kluby.nazwa": "Platforma Obywatelska",
+    "poslowie.wartosc_biuro_inne": 680,
+    "poslowie.wartosc_biuro_ekspertyzy": 0,
+    "poslowie.wartosc_biuro_materialy_biurowe": 2683.86,
+    "poslowie.frekwencja": 99.8,
+    "poslowie.mandat_wygasl": "0",
+    "poslowie.wartosc_biuro_taksowki": 0,
+    "poslowie.sejm_okreg_id": "31",
+    "poslowie.liczba_przelotow": 48,
+    "poslowie.wartosc_biuro_zlecenia": 26031.49,
+    "poslowie.liczba_projektow_uchwal": 6,
+    "poslowie.imiona": "Marek",
+    "poslowie.biuro_html": "<table><thead><th class=\"left\">Wydatkowanie kwoty rycza\u0142tu przeznaczonego na prowadzenie biura poselskiego:<\/th><\/thead><tbody><tr><td class=\"left\">Sprawozdanie za <A class=\"pdf right\" HREF=\"http:\/\/orka.sejm.gov.pl\/rozlicz7.nsf\/lista\/2011434\/$File\/2011ryczalt_434.pdf?OpenElement\" target=\"_blank\">2011 rok<\/A><\/td><\/tr><tr><td class=\"left\">Sprawozdanie za <A class=\"pdf right\" HREF=\"http:\/\/orka.sejm.gov.pl\/rozlicz7.nsf\/lista\/2012434\/$File\/2012ryczalt_434.pdf?OpenElement\" target=\"_blank\">2012 rok<\/A><\/td><\/tr><tr><td class=\"left\">Sprawozdanie za <A class=\"pdf right\" HREF=\"http:\/\/orka.sejm.gov.pl\/rozlicz7.nsf\/lista\/2013434\/$File\/2013ryczalt_434.pdf?OpenElement\" target=\"_blank\">2013 rok<\/A><\/td><\/tr><tr><td class=\"left\">Sprawozdanie za <A class=\"pdf right\" HREF=\"http:\/\/orka.sejm.gov.pl\/rozlicz7.nsf\/lista\/2014434\/$File\/2014ryczalt_434.pdf?OpenElement\" target=\"_blank\">2014 rok<\/A><\/td><\/tr><tr><td class=\"left\">Rozliczenie za <A class=\"pdf right\" HREF=\"http:\/\/orka.sejm.gov.pl\/rozlicz7.nsf\/lista\/2015434\/$File\/2015ryczalt_434.pdf?OpenElement\" target=\"_blank\">okres sprawowania mandatu <\/A><\/td><\/tr><\/tbody><\/table>",
+    "poslowie.wartosc_biuro_wynagrodzenia_pracownikow": 34165.32,
+    "poslowie.numer_legitymacji": 434,
+    "poslowie.imie_pierwsze": "Marek",
+    "poslowie.liczba_glosow": 10753,
+    "poslowie.procent_glosow": 2.67,
+    "poslowie.pkw_komitet_id": "3",
+    "poslowie.wartosc_uposazenia_pln": 9892.3,
+    "poslowie.zawod": "prawnik",
+    "poslowie.data_urodzenia": "1980-03-24",
+    "poslowie.okreg_gminy_str": "Katowice, Ruda \u015al\u0105ska, Tychy",
+    "poslowie.imie_drugie": "Krzysztof",
+    "poslowie.kadencja_ostatnia": "8",
+    "poslowie.wartosc_biuro_spotkania": 0,
+    "poslowie.liczba_glosowan_zbuntowanych": 12,
+    "poslowie.klub_id": "1",
+    "poslowie.liczba_komisji": 2,
+    "poslowie.wartosc_wyjazdow": 18878.88,
+    "poslowie.zbuntowanie": 0.2,
+    "poslowie.nazwa_odwrocona": "W\u00f3jcik Marek",
+    "poslowie.twitter_account_id": "50",
+    "poslowie.wartosc_biuro_przejazdy": 25901.44,
+    "poslowie.liczba_glosowan_opuszczonych": 10,
+    "poslowie.plec": "M",
+    "poslowie.kadencja": [
+      7,
+      8
+    ],
+    "poslowie.id": "431",
+    "poslowie.wartosc_refundacja_kwater_pln": 0,
+    "poslowie.liczba_interpelacji": 40,
+    "poslowie.nazwa": "Marek W\u00f3jcik",
+    "poslowie.dopelniacz": "Marka W\u00f3jcika",
+    "poslowie.wartosc_biuro_telekomunikacja": 5286.95,
+    "poslowie.liczba_uchwal_komisji_etyki": 0,
+    "poslowie.nazwisko": "W\u00f3jcik",
+    "poslowie.wartosc_biuro_biuro": 34936.73,
+    "poslowie.miejsce_urodzenia": "Katowice",
+    "poslowie.wartosc_biuro_podroze_pracownikow": 0,
+    "poslowie.krs_osoba_id": "872540",
+    "poslowie.liczba_podkomisji": 2,
+    "poslowie.liczba_przejazdow": 112,
+    "poslowie.numer_na_liscie": 5,
+    "poslowie.rozliczenie_id": "274127",
+    "poslowie.pkw_nr_listy": "0",
+    "poslowie.liczba_wyjazdow": 1,
+    "poslowie.liczba_wypowiedzi": 75,
+    "poslowie.liczba_projektow_ustaw": 38,
+    "poslowie.liczba_glosowan": 6174,
+    "poslowie.liczba_wnioskow": 2,
+    "poslowie.miejsce_zamieszkania": "Katowice",
+    "poslowie.mowca_id": "428",
+    "poslowie.okreg_wyborczy_numer": "31",
+    "poslowie.liczba_slow": 39464,
+    "poslowie.wartosc_biuro_srodki_trwale": 1019.99
+  },
+  "layers": {
+    "dataset": null,
+    "channels": null,
+    "page": null,
+    "subscribers": null,
+    "krs": {
+      "biznes": [],
+      "ngo": [
+        {
+          "organizacja": {
+            "id": "236501",
+            "nazwa": "STOWARZYSZENIE EUROPA JEST PROSTA",
+            "forma_prawna_str": "STOWARZYSZENIE",
+            "kapital_zakladowy": "0.00",
+            "cel_dzialania": "",
+            "data_rejestracji": "2005-06-21"
+          },
+          "rola": {
+            "id": "766014",
+            "label": "WICEPREZES",
+            "deleted": "0"
+          },
+          "forma": {
+            "typ_id": "2"
+          }
+        },
+        {
+          "organizacja": {
+            "id": "33191",
+            "nazwa": "FUNDACJA IMIENIA MARIANA BUBLEWICZA",
+            "forma_prawna_str": "FUNDACJA",
+            "kapital_zakladowy": "0.00",
+            "cel_dzialania": "1.DZIA\u0141ANIE NA RZECZ POPRAWY POZIOMU BEZPIECZE\u0143STWA NA POLSKICH DROGACH. 2.POPULARYZACJA IDEI BEZPIECZNEJ JAZDY PRZEZ ZMOTORYZOWANYCH I BEZPIECZNEGO ZACHOWANIA SI\u0118 PIESZYCH. 3.PODNOSZENIE UMIEJ\u0118TNO\u015aCI BEZPIECZNEGO PROWADZENIA POJAZD\u00d3W MECHANICZNYCH W\u015aR\u00d3D KIEROWC\u00d3W. 4.UPOWSZECHNIANIE POTRZEBY KSZTA\u0141TOWANIA W\u0141A\u015aCIWYCH RELACJI MI\u0118DZY POSZCZEG\u00d3LNYMI UCZESTNIKAMI RUCHU DROGOWEGO. 5.DZIA\u0141ANIA NA RZECZ USTANAWIANIA PROGRAM\u00d3W KSZTA\u0141TOWANIA BEZPIECZE\u0143STWA RUCHU DROGOWEGO (BRD). 6.DZIA\u0141ANIA NA RZECZ BUDOWY SIECI NOWOCZESNYCH DR\u00d3G W POLSCE. 7.WSPIERANIE KOOPERACJI POMI\u0118DZY INSTYTUCJAMI I FIRMAMI PROPAGUJ\u0104CYMI PROBLEMATYK\u0118 BEZPIECZE\u0143STWA RUCHU DROGOWEGO. 8.WSPIERANIE INICJATYW SAMORZ\u0104DOWYCH NA RZECZ LOKALNEGO ROZWOJU BRD. 9.WSPIERANIE DZIA\u0141A\u0143 W ZAKRESIE POZYSKIWANIA \u015aRODK\u00d3W FINANSOWYCH NA RZECZ BRD Z FUNDUSZY UNII EUROPEJSKIEJ. 10.ROZW\u00d3J I PROMOCJA SPORTU SAMOCHODOWEGO W POLSCE ORAZ SPORTU POWSZECHNEGO I KWALIFIKOWANEGO DZIECI I M\u0141ODZIE\u017bY ORAZ INNYCH OS\u00d3B, A TAK\u017bE PROMOWANIE ZDROWEGO TRYBU \u017bYCIA. 11.WSPIERANIE FINANSOWE SZKO\u0141Y MISTRZOSTWA SPORTOWEGO IM. MARIANA GRZEGORZA BUBLEWICZA W OLSZTYNIE. 12.DZIA\u0141ALNO\u015a\u0106 CHARYTATYWNA. 13.NIESIENIE POMOCY OSOBOM Z SYNDROMEM DDA, JAK R\u00d3WNIE\u017b DZIECIOM I M\u0141ODZIE\u017bY POCHODZ\u0104CYCH Z RODZIN ZMAGAJ\u0104CYCH SI\u0118 Z INNYMI FORMAMI UZALE\u017bNIE\u0143, POWODUJ\u0104CYCH DYSFUNKCJ\u0118 JEDNOSTKI W RODZINIE, NAJBLI\u017bSZYM OTOCZENIU LUB SPO\u0141ECZE\u0143STWIE. 14.UDZIELANIE POMOCY SPO\u0141ECZNEJ OSOBOM Z SYNDROMEM DDA ORAZ DZIECIOM I M\u0141ODZIE\u017bY Z RODZIN ZMAGAJ\u0104CYCH SI\u0118 Z INNYMI FORMAMI UZALE\u017bNIE\u0143, W TYM TAK\u017bE ICH AKTYWIZACJI ZAWODOWEJ I SPO\u0141ECZNEJ ORAZ WYR\u00d3WNYWANIE SZANS TYCH OS\u00d3B. 15.\u015aWIADCZENIE POMOCY PEDAGOGICZNEJ, PSYCHOLOGICZNEJ, TERAPEUTYCZNEJ ORAZ PRAWNEJ DLA OS\u00d3B Z SYNDROMEM DDA, JAK R\u00d3WNIE\u017b DZIECIOM I M\u0141ODZIE\u017bY OBARCZONYCH RYZYKIEM UZALE\u017bNIE\u0143 W INNEJ FORMIE. 16.PODNOSZENIE \u015aWIADOMO\u015aCI I EDUKACJI W ZAKRESIE PRZYCZYN, OBJAW\u00d3W I SKUTK\u00d3W UZALE\u017bNIE\u0143 ORAZ CHOR\u00d3B, W TYM W SZCZEG\u00d3LNO\u015aCI ANOREKSJI, BULIMII ORAZ OTY\u0141O\u015aCI.POZOSTA\u0141E PKT OD 17 DO 21 ZGODNIE Z  8 STATUTU.",
+            "data_rejestracji": "2001-08-03"
+          },
+          "rola": {
+            "id": "447215",
+            "deleted": "0",
+            "label": "Cz\u0142onek organu nadzoru"
+          },
+          "forma": {
+            "typ_id": "2"
+          }
+        },
+        {
+          "organizacja": {
+            "id": "15337",
+            "nazwa": "STOWARZYSZENIE EUROPEJSKIE \"EUROENTUZJA\u015aCI\"W LIKWIDACJI",
+            "forma_prawna_str": "STOWARZYSZENIE",
+            "kapital_zakladowy": "0.00",
+            "cel_dzialania": "A\/ROZWIJANIE I PROPAGOWANIE INICJATYW, POSTAW I DZIA\u0141A\u0143 SPRZYJAJ\u0104CYCH SZERZENIU WIEDZY O WSP\u00d3LNOTACH EUROPEJSKICH \/UNII EUROPEJSKIEJ\/ I ICH INSTYTUCJACH ORAZ INTEGRACJI POLSKI Z ICH STRUKTURAMI, B\/PROMOWANIE ZAUFANIA I SZACUNKU DO IDEI INTEGRACJI EUROPEJSKIEJ, C\/UPOWSZECHNIANE WIEDZY O ZASADACH FUNKCJONOWANIA I ZADANIACH ORGAN\u00d3W INSTYTUCJI EUROPEJSKICH, D\/GROMADZENIE I UPOWSZECHNIANIE DO\u015aWIADCZE\u0143 ZWI\u0104ZANYCH Z PROCESAMI INTEGRACJI, E\/U\u0141ATWIANIE KONTAKTU Z INSTYTUCJAMI I ORGANIZACJAMI MI\u0118DZYNARODOWYMI, F\/PRZYCZYNIANIE SI\u0118 DO ROZWOJU \u015aWIADOMO\u015aCI OBYWATELI PA\u0143STWA POLSKIEGO W ZAKRESIE INTEGRACJI EUROPY, G\/WSPIERANIE ORGANIZACYJNE I RZECZOWE OS\u00d3B FIZYCZNYCH, STOWARZYSZE\u0143, FUNDACJI, JEDNOSTEK ORGANIZACYJNYCH I ORGANIZACJI POLITYCZNYCH, KT\u00d3RE PODEJMUJ\u0104 TAKIE DZIA\u0141ANIA.",
+            "data_rejestracji": "2001-05-29"
+          },
+          "rola": {
+            "id": "14159",
+            "deleted": "0",
+            "label": "Za\u0142o\u017cyciel"
+          },
+          "forma": {
+            "typ_id": "2"
+          }
+        }
+      ]
+    },
+    "wyjazdy": [
+      {
+        "country_code": "US",
+        "delegacja": "Konferencja parlamentarna dot. zwalczania terroryzmu",
+        "kraj": "USA",
+        "miasto": "Waszyngton",
+        "id": "747",
+        "wniosek_nr": "250\/14",
+        "liczba_dni": "5",
+        "od": "2014-09-17",
+        "do": "2014-09-21",
+        "koszt_transport": "14979.68",
+        "koszt_dieta": "800.30",
+        "koszt_hotel": "3005.84",
+        "koszt_dojazd": "0.00",
+        "koszt_ubezpieczenie": "85.85",
+        "koszt_fundusz": "0.00",
+        "koszt_kurs": "-7.21",
+        "koszt_zaliczki": "0.00",
+        "koszt_suma": "18878.88"
+      }
+    ]
+  },
+  "Aggs": {
+    "_page": {
+      "doc_count": 0,
+      "page": {
+        "hits": {
+          "total": 0,
+          "max_score": null,
+          "hits": []
+        }
+      }
+    }
+  }
+}

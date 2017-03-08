@@ -1,1 +1,199 @@
-{"id":"117","dataset":"poslowie","url":"https:\/\/api-v3.mojepanstwo.pl\/dane\/poslowie\/117","mp_url":"https:\/\/mojepanstwo.pl\/dane\/poslowie\/117","schema_url":"https:\/\/api-v3.mojepanstwo.pl\/schemas\/dane\/poslowie.json","global_id":"1556618","slug":"grad-aleksander","score":null,"data":{"ludzie.id":"107","ludzie.nazwa":"Aleksander Grad","ludzie.slug":"aleksander-grad","sejm_kluby.id":"1","sejm_kluby.skrot":"PO","sejm_kluby.nazwa":"Platforma Obywatelska","poslowie.wartosc_biuro_inne":875.26,"poslowie.wartosc_biuro_ekspertyzy":0,"poslowie.wartosc_biuro_materialy_biurowe":3302.64,"poslowie.frekwencja":98.5,"poslowie.mandat_wygasl":"1","poslowie.wartosc_biuro_taksowki":0,"poslowie.sejm_okreg_id":"15","poslowie.liczba_przelotow":0,"poslowie.wartosc_biuro_zlecenia":38350,"poslowie.liczba_projektow_uchwal":1,"poslowie.imiona":"Aleksander","poslowie.biuro_html":"<table><thead><th class=\"left\">Wydatkowanie kwoty rycza\u0142tu przeznaczonego na prowadzenie biura poselskiego:<\/th><\/thead><tbody><tr><td class=\"left\">Rozliczenie za <A class=\"pdf right\" HREF=\"http:\/\/orka.sejm.gov.pl\/rozlicz7.nsf\/lista\/2012116\/$File\/2012ryczalt_116.pdf?OpenElement\" target=\"_blank\">okres sprawowania mandatu<\/A><\/td><\/tr><\/tbody><\/table>","poslowie.wartosc_biuro_wynagrodzenia_pracownikow":15046.9,"poslowie.numer_legitymacji":116,"poslowie.data_wygasniecia_mandatu":"2012-06-30","poslowie.imie_pierwsze":"Aleksander","poslowie.liczba_glosow":23671,"poslowie.procent_glosow":9.18,"poslowie.pkw_komitet_id":"3","poslowie.wartosc_uposazenia_pln":0,"poslowie.zawod":"in\u017cynier geodeta","poslowie.data_urodzenia":"1962-05-01","poslowie.okreg_gminy_str":"Tarn\u00f3w, Wieliczka, Brzesko","poslowie.imie_drugie":"","poslowie.kadencja_ostatnia":"7","poslowie.wartosc_biuro_spotkania":300,"poslowie.liczba_glosowan_zbuntowanych":0,"poslowie.klub_id":"1","poslowie.liczba_komisji":0,"poslowie.wartosc_wyjazdow":0,"poslowie.zbuntowanie":0,"poslowie.nazwa_odwrocona":"Grad Aleksander","poslowie.twitter_account_id":"0","poslowie.wartosc_biuro_przejazdy":10313.75,"poslowie.liczba_glosowan_opuszczonych":11,"poslowie.plec":"M","poslowie.kadencja":[7],"poslowie.id":"117","poslowie.wartosc_refundacja_kwater_pln":0,"poslowie.liczba_interpelacji":2,"poslowie.nazwa":"Aleksander Grad","poslowie.dopelniacz":"Aleksandra Grada","poslowie.wartosc_biuro_telekomunikacja":7058.06,"poslowie.liczba_uchwal_komisji_etyki":0,"poslowie.nazwisko":"Grad","poslowie.wartosc_biuro_biuro":16560.91,"poslowie.miejsce_urodzenia":"\u0141osiniec","poslowie.wartosc_biuro_podroze_pracownikow":0,"poslowie.krs_osoba_id":"450716","poslowie.liczba_podkomisji":0,"poslowie.liczba_przejazdow":0,"poslowie.numer_na_liscie":1,"poslowie.rozliczenie_id":"616","poslowie.pkw_nr_listy":"0","poslowie.liczba_wyjazdow":0,"poslowie.liczba_wypowiedzi":0,"poslowie.liczba_projektow_ustaw":0,"poslowie.liczba_glosowan":729,"poslowie.liczba_wnioskow":0,"poslowie.miejsce_zamieszkania":"Ple\u015bna","poslowie.mowca_id":"107","poslowie.okreg_wyborczy_numer":"15","poslowie.liczba_slow":0,"poslowie.wartosc_biuro_srodki_trwale":0},"layers":{"dataset":null,"channels":null,"page":null,"subscribers":null,"krs":{"biznes":[{"organizacja":{"id":"21374","nazwa":"ZESP\u00d3\u0141 ELEKTROWNI P\u0104TN\u00d3W-ADAM\u00d3W-KONIN","forma_prawna_str":"SP\u00d3\u0141KA AKCYJNA","kapital_zakladowy":"101647094.00","cel_dzialania":"","data_rejestracji":"2001-06-21"},"rola":{"id":"1083696","label":"PREZES ZARZ\u0104DU","deleted":"0"},"forma":{"typ_id":"1"}},{"organizacja":{"id":"345416","nazwa":"PGE ENERGIA J\u0104DROWA","forma_prawna_str":"SP\u00d3\u0141KA AKCYJNA","kapital_zakladowy":"113500000.00","cel_dzialania":"","data_rejestracji":"2009-12-28"},"rola":{"id":"585639","label":"PREZES ZARZ\u0104DU","deleted":"0"},"forma":{"typ_id":"1"}},{"organizacja":{"id":"61592","nazwa":"PAK KOPALNIA W\u0118GLA BRUNATNEGO ADAM\u00d3W","forma_prawna_str":"SP\u00d3\u0141KA AKCYJNA","kapital_zakladowy":"120000000.00","cel_dzialania":"","data_rejestracji":"2001-11-13"},"rola":{"id":"71704","deleted":"0","label":"Cz\u0142onek organu nadzoru"},"forma":{"typ_id":"1"}}],"ngo":[{"organizacja":{"id":"106604","nazwa":"POLSKI KOMITET ENERGII ELEKTRYCZNEJ","forma_prawna_str":"STOWARZYSZENIE","kapital_zakladowy":"0.00","cel_dzialania":"","data_rejestracji":"2002-05-10"},"rola":{"id":"214475","label":"CZ\u0141ONEK","deleted":"0"},"forma":{"typ_id":"2"}},{"organizacja":{"id":"106604","nazwa":"POLSKI KOMITET ENERGII ELEKTRYCZNEJ","forma_prawna_str":"STOWARZYSZENIE","kapital_zakladowy":"0.00","cel_dzialania":"","data_rejestracji":"2002-05-10"},"rola":{"id":"992089","label":"CZ\u0141ONEK","deleted":"1"},"forma":{"typ_id":"2"}},{"organizacja":{"id":"11303","nazwa":"FUNDACJA EKOLOGICZNA \"WOLNI OD AZBESTU\"","forma_prawna_str":"FUNDACJA","kapital_zakladowy":"0.00","cel_dzialania":"1. LIKWIDACJA PRZYCZYN I SKUTK\u00d3W SZKODLIWEGO DZIA\u0141ANIA AZBESTU NA \u015aRODOWISKO NATURALNE ORAZ ZDROWIE I \u017bYCIE LUDZKIE NA TERENIE GMINY SZCZUCIN I GMIN S\u0104SIADUJ\u0104CYCH . 2. PROPAGOWANIE I WSPIERANIE INICJATYW ZWI\u0104ZANYCH Z ZALESIENIEM, ZADRZEWIANIEM I ZAKRZEWIENIEM OBSZAR\u00d3W SKA\u017bONYCH AZBESTEM. 3. ORGANIZOWANIE OKRESOWYCH BADA\u0143 ORAZ OTACZANIE OPIEK\u0104 MEDYCZN\u0104 LUDNO\u015aCI ZAMIESZKA\u0141EJ NA TERENIE SKA\u017bONYM AZBESTEM. 4. AKTYWIZOWANIE \u015aRODOWISK NAUKI I TECHNIKI S\u0141U\u017b\u0104CE STA\u0141EMU POG\u0141\u0118BIANIU WIEDZY O STANIE I POTRZEBACH W ZAKRESIE GOSPODAROWANIA PRODUKTAMI I ODPADAMI Z ZAWARTO\u015aCI\u0104 AZBESTU","data_rejestracji":"2001-05-24"},"rola":{"id":"8617","deleted":"0","label":"Cz\u0142onek organu nadzoru"},"forma":{"typ_id":"2"}}]},"wyjazdy":{}},"Aggs":{"_page":{"doc_count":0,"page":{"hits":{"total":0,"max_score":null,"hits":[]}}}}}
+{
+  "id": "117",
+  "dataset": "poslowie",
+  "url": "https:\/\/api-v3.mojepanstwo.pl\/dane\/poslowie\/117",
+  "mp_url": "https:\/\/mojepanstwo.pl\/dane\/poslowie\/117",
+  "schema_url": "https:\/\/api-v3.mojepanstwo.pl\/schemas\/dane\/poslowie.json",
+  "global_id": "1556618",
+  "slug": "grad-aleksander",
+  "score": null,
+  "data": {
+    "ludzie.id": "107",
+    "ludzie.nazwa": "Aleksander Grad",
+    "ludzie.slug": "aleksander-grad",
+    "sejm_kluby.id": "1",
+    "sejm_kluby.skrot": "PO",
+    "sejm_kluby.nazwa": "Platforma Obywatelska",
+    "poslowie.wartosc_biuro_inne": 875.26,
+    "poslowie.wartosc_biuro_ekspertyzy": 0,
+    "poslowie.wartosc_biuro_materialy_biurowe": 3302.64,
+    "poslowie.frekwencja": 98.5,
+    "poslowie.mandat_wygasl": "1",
+    "poslowie.wartosc_biuro_taksowki": 0,
+    "poslowie.sejm_okreg_id": "15",
+    "poslowie.liczba_przelotow": 0,
+    "poslowie.wartosc_biuro_zlecenia": 38350,
+    "poslowie.liczba_projektow_uchwal": 1,
+    "poslowie.imiona": "Aleksander",
+    "poslowie.biuro_html": "<table><thead><th class=\"left\">Wydatkowanie kwoty rycza\u0142tu przeznaczonego na prowadzenie biura poselskiego:<\/th><\/thead><tbody><tr><td class=\"left\">Rozliczenie za <A class=\"pdf right\" HREF=\"http:\/\/orka.sejm.gov.pl\/rozlicz7.nsf\/lista\/2012116\/$File\/2012ryczalt_116.pdf?OpenElement\" target=\"_blank\">okres sprawowania mandatu<\/A><\/td><\/tr><\/tbody><\/table>",
+    "poslowie.wartosc_biuro_wynagrodzenia_pracownikow": 15046.9,
+    "poslowie.numer_legitymacji": 116,
+    "poslowie.data_wygasniecia_mandatu": "2012-06-30",
+    "poslowie.imie_pierwsze": "Aleksander",
+    "poslowie.liczba_glosow": 23671,
+    "poslowie.procent_glosow": 9.18,
+    "poslowie.pkw_komitet_id": "3",
+    "poslowie.wartosc_uposazenia_pln": 0,
+    "poslowie.zawod": "in\u017cynier geodeta",
+    "poslowie.data_urodzenia": "1962-05-01",
+    "poslowie.okreg_gminy_str": "Tarn\u00f3w, Wieliczka, Brzesko",
+    "poslowie.imie_drugie": "",
+    "poslowie.kadencja_ostatnia": "7",
+    "poslowie.wartosc_biuro_spotkania": 300,
+    "poslowie.liczba_glosowan_zbuntowanych": 0,
+    "poslowie.klub_id": "1",
+    "poslowie.liczba_komisji": 0,
+    "poslowie.wartosc_wyjazdow": 0,
+    "poslowie.zbuntowanie": 0,
+    "poslowie.nazwa_odwrocona": "Grad Aleksander",
+    "poslowie.twitter_account_id": "0",
+    "poslowie.wartosc_biuro_przejazdy": 10313.75,
+    "poslowie.liczba_glosowan_opuszczonych": 11,
+    "poslowie.plec": "M",
+    "poslowie.kadencja": [
+      7
+    ],
+    "poslowie.id": "117",
+    "poslowie.wartosc_refundacja_kwater_pln": 0,
+    "poslowie.liczba_interpelacji": 2,
+    "poslowie.nazwa": "Aleksander Grad",
+    "poslowie.dopelniacz": "Aleksandra Grada",
+    "poslowie.wartosc_biuro_telekomunikacja": 7058.06,
+    "poslowie.liczba_uchwal_komisji_etyki": 0,
+    "poslowie.nazwisko": "Grad",
+    "poslowie.wartosc_biuro_biuro": 16560.91,
+    "poslowie.miejsce_urodzenia": "\u0141osiniec",
+    "poslowie.wartosc_biuro_podroze_pracownikow": 0,
+    "poslowie.krs_osoba_id": "450716",
+    "poslowie.liczba_podkomisji": 0,
+    "poslowie.liczba_przejazdow": 0,
+    "poslowie.numer_na_liscie": 1,
+    "poslowie.rozliczenie_id": "616",
+    "poslowie.pkw_nr_listy": "0",
+    "poslowie.liczba_wyjazdow": 0,
+    "poslowie.liczba_wypowiedzi": 0,
+    "poslowie.liczba_projektow_ustaw": 0,
+    "poslowie.liczba_glosowan": 729,
+    "poslowie.liczba_wnioskow": 0,
+    "poslowie.miejsce_zamieszkania": "Ple\u015bna",
+    "poslowie.mowca_id": "107",
+    "poslowie.okreg_wyborczy_numer": "15",
+    "poslowie.liczba_slow": 0,
+    "poslowie.wartosc_biuro_srodki_trwale": 0
+  },
+  "layers": {
+    "dataset": null,
+    "channels": null,
+    "page": null,
+    "subscribers": null,
+    "krs": {
+      "biznes": [
+        {
+          "organizacja": {
+            "id": "345416",
+            "nazwa": "PGE ENERGIA J\u0104DROWA",
+            "forma_prawna_str": "SP\u00d3\u0141KA AKCYJNA",
+            "kapital_zakladowy": "113500000.00",
+            "cel_dzialania": "",
+            "data_rejestracji": "2009-12-28"
+          },
+          "rola": {
+            "id": "585639",
+            "label": "PREZES ZARZ\u0104DU",
+            "deleted": "0"
+          },
+          "forma": {
+            "typ_id": "1"
+          }
+        },
+        {
+          "organizacja": {
+            "id": "61592",
+            "nazwa": "PAK KOPALNIA W\u0118GLA BRUNATNEGO ADAM\u00d3W",
+            "forma_prawna_str": "SP\u00d3\u0141KA AKCYJNA",
+            "kapital_zakladowy": "120000000.00",
+            "cel_dzialania": "",
+            "data_rejestracji": "2001-11-13"
+          },
+          "rola": {
+            "id": "71704",
+            "deleted": "0",
+            "label": "Cz\u0142onek organu nadzoru"
+          },
+          "forma": {
+            "typ_id": "1"
+          }
+        }
+      ],
+      "ngo": [
+        {
+          "organizacja": {
+            "id": "106604",
+            "nazwa": "POLSKI KOMITET ENERGII ELEKTRYCZNEJ",
+            "forma_prawna_str": "STOWARZYSZENIE",
+            "kapital_zakladowy": "0.00",
+            "cel_dzialania": "",
+            "data_rejestracji": "2002-05-10"
+          },
+          "rola": {
+            "id": "214475",
+            "label": "CZ\u0141ONEK",
+            "deleted": "0"
+          },
+          "forma": {
+            "typ_id": "2"
+          }
+        },
+        {
+          "organizacja": {
+            "id": "106604",
+            "nazwa": "POLSKI KOMITET ENERGII ELEKTRYCZNEJ",
+            "forma_prawna_str": "STOWARZYSZENIE",
+            "kapital_zakladowy": "0.00",
+            "cel_dzialania": "",
+            "data_rejestracji": "2002-05-10"
+          },
+          "rola": {
+            "id": "992089",
+            "label": "CZ\u0141ONEK",
+            "deleted": "1"
+          },
+          "forma": {
+            "typ_id": "2"
+          }
+        },
+        {
+          "organizacja": {
+            "id": "11303",
+            "nazwa": "FUNDACJA EKOLOGICZNA \"WOLNI OD AZBESTU\"",
+            "forma_prawna_str": "FUNDACJA",
+            "kapital_zakladowy": "0.00",
+            "cel_dzialania": "1. LIKWIDACJA PRZYCZYN I SKUTK\u00d3W SZKODLIWEGO DZIA\u0141ANIA AZBESTU NA \u015aRODOWISKO NATURALNE ORAZ ZDROWIE I \u017bYCIE LUDZKIE NA TERENIE GMINY SZCZUCIN I GMIN S\u0104SIADUJ\u0104CYCH . 2. PROPAGOWANIE I WSPIERANIE INICJATYW ZWI\u0104ZANYCH Z ZALESIENIEM, ZADRZEWIANIEM I ZAKRZEWIENIEM OBSZAR\u00d3W SKA\u017bONYCH AZBESTEM. 3. ORGANIZOWANIE OKRESOWYCH BADA\u0143 ORAZ OTACZANIE OPIEK\u0104 MEDYCZN\u0104 LUDNO\u015aCI ZAMIESZKA\u0141EJ NA TERENIE SKA\u017bONYM AZBESTEM. 4. AKTYWIZOWANIE \u015aRODOWISK NAUKI I TECHNIKI S\u0141U\u017b\u0104CE STA\u0141EMU POG\u0141\u0118BIANIU WIEDZY O STANIE I POTRZEBACH W ZAKRESIE GOSPODAROWANIA PRODUKTAMI I ODPADAMI Z ZAWARTO\u015aCI\u0104 AZBESTU",
+            "data_rejestracji": "2001-05-24"
+          },
+          "rola": {
+            "id": "8617",
+            "deleted": "0",
+            "label": "Cz\u0142onek organu nadzoru"
+          },
+          "forma": {
+            "typ_id": "2"
+          }
+        }
+      ]
+    },
+    "wyjazdy": {}
+  },
+  "Aggs": {
+    "_page": {
+      "doc_count": 0,
+      "page": {
+        "hits": {
+          "total": 0,
+          "max_score": null,
+          "hits": []
+        }
+      }
+    }
+  }
+}
