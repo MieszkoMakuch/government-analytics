@@ -49,8 +49,8 @@ public class Representative {
         for (Roczniki rocznik : yearsSpendingList) {
             if (rocznik.getRok() == year) return rocznik;
         }
-        throw new NoSpendingsDetailsInYearException("Information about spendings in year " + year + " is not available " +
-                "(name: " + name + ", id=" + id + ")");
+        throw new NoSpendingsDetailsInYearException("Information about spendings in year " + year + " is not available "
+                + "(name: " + name + ", id=" + id + ")");
     }
 
     public BigDecimal getOfficeRenovationSpendings(int year) {
@@ -90,7 +90,6 @@ public class Representative {
     protected String missingTripInformationMessage() {
         return "Missing information about " + numberOfTripsWithMissingDetails() + " " + this.toStringS() + " trip(s).";
     }
-
 
     @Override
     public String toString() {
