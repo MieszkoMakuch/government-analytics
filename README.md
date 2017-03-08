@@ -1,38 +1,36 @@
-# Laboratorium nr 9
+## Data of members of the Polish Government 
 
-Korzystanie z danych udostępnianych w webowym API.
+Package provides access to data and basic data analysis of members of the Polish Government using Sejmometr WebAPI: https://mojepanstwo.pl/api/sejmometr
 
-1. Zapoznaj się z API serwisu sejmometr https://mojepanstwo.pl/api/sejmometr
-2. Opracuj system, który na podstawie argumentów linii poleceń wyświetla następujące informacje (dla określonej kadencji
-   sejmu lub określonego roku):
-    * suma wydatków posła/posłanki o określonym imieniu i nazwisku. Przykłady:
-        * `select "Jarosław Kaczyński" spendings in 2013`
-        * `select "Ewa Żmuda-Trzebiatowska" spendings in 2013`
-        * `select "Armand Kamil Ryfiński" spendings in 2013`
-    * wysokości wydatków na 'drobne naprawy i remonty biura poselskiego' określonego posła/posłanki. Przykłady:
-        * `select "Jarosław Kaczyński" office spendings in 2013`
-        * `select "Ewa Żmuda-Trzebiatowska" office spendings in 2013`
-    * średniej wartości sumy wydatków wszystkich posłów. Przykłady:
-        * `select avg spendings in 2013`
-    * posła/posłanki, który wykonał najwięcej podróży zagranicznych. Przykłady:
-        * `select representative with max trips term 7`
-        * `select representative max trips term 7`
-        * `select rep max trips term 7`
-    * posła/posłanki, który najdłużej przebywał za granicą. Przykłady:
-        * `select representative with the longest trips term 7`
-        * `select representative longest trips term 7`
-        * `select rep longest trips term 7`
-    * posła/posłanki, który odbył najdroższą podróż zagraniczną. Przykłady:
-        * `select representative with the most expensive trip term 7`
-        * `select representative mexpensive trip term 7`
-        * `select rep mexpensive trip term 7`
-    * listę wszystkich posłów, którzy odwiedzili dany kraj. Przykłady:
-        * `select representatives who visited Italy term 7`
-        * `select representatives visited Italy term 7`
-        * `select rep visited Italy term 7`
-        * `select rep visited IT term 7`
-3. Program powinien obsługiwać błędy oraz zawierać testy weryfikujące poprawność jego działania.
-4. Program wykorzystuje pliki lokalne umieszczone w folderze `jsonLocalFiles/`. Polecenie do aktualizacji plików lokalnych: 
-    * `update sejmometr term 7` - aktualizuje dane wszystkich posłów 7. kadencji 
-    * `update sejmometr term 8` - aktualizuje dane wszystkich posłów 8. kadencji
-    * `update representative "Jarosław Kaczyński"` - aktualizuje dane posła o określonym imieniu i nazwisku
+Program displays information based on command line arguments. List of the available options:
+* sum of the spending of representative with the specified name. Examples:
+    * `select "Jarosław Kaczyński" spendings in 2013`
+    * `select "Ewa Żmuda-Trzebiatowska" spendings in 2013`
+    * `select "Armand Kamil Ryfiński" spendings in 2013`
+* sum of the office spending of representative with the specified name. Examples:
+    * `select "Jarosław Kaczyński" office spendings in 2013`
+    * `select "Ewa Żmuda-Trzebiatowska" office spendings in 2013`
+* average sum of the spending of all representatives in the specified year. Examples:
+    * `select avg spendings in 2013`
+* name of representative with the biggest number of trips abroad in the specified term. Examples:
+    * `select representative with max trips term 7`
+    * `select representative max trips term 7`
+    * `select rep max trips term 7`
+* name of representative who was abroad for the longest time in the specified term. Examples:
+    * `select representative with the longest trips term 7`
+    * `select representative longest trips term 7`
+    * `select rep longest trips term 7`
+* name of representative who took the most expensive trip abroad in the specified term. Examples:
+    * `select representative with the most expensive trip term 7`
+    * `select representative mexpensive trip term 7`
+    * `select rep mexpensive trip term 7`
+* list of all representatives who visited the specified country in the specified term. Examples:
+    * `select representatives who visited Italy term 7`
+    * `select representatives visited Italy term 7`
+    * `select rep visited Italy term 7`
+    * `select rep visited IT term 7`
+
+**Note that** program uses cached local files for better performance. Files are located in `jsonLocalFiles/` folder and can be updated with the following commands:
+* `update sejmometr term 7` - updates data of all 7th term representatives
+* `update sejmometr term 8` - updates data of all 8th term representatives
+* `update representative "Jarosław Kaczyński"` - updates data of the representative with specified name
