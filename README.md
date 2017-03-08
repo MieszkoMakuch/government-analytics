@@ -2,7 +2,7 @@
 
 Package provides access to data and basic data analysis of members of the Polish Government using Sejmometr WebAPI: https://mojepanstwo.pl/api/sejmometr
 
-Program displays information based on command line arguments. List of the available options:
+Program displays information based on the command line arguments. List of all available options:
 * sum of the spending of representative with the specified name. Examples:
     * `select "Jarosław Kaczyński" spendings in 2013`
     * `select "Ewa Żmuda-Trzebiatowska" spendings in 2013`
@@ -12,15 +12,15 @@ Program displays information based on command line arguments. List of the availa
     * `select "Ewa Żmuda-Trzebiatowska" office spendings in 2013`
 * average sum of the spending of all representatives in the specified year. Examples:
     * `select avg spendings in 2013`
-* name of representative with the biggest number of trips abroad in the specified term. Examples:
+* name of the representative with the biggest number of trips abroad in the specified term. Examples:
     * `select representative with max trips term 7`
     * `select representative max trips term 7`
     * `select rep max trips term 7`
-* name of representative who was abroad for the longest time in the specified term. Examples:
+* name of the representative who was abroad for the longest time in the specified term. Examples:
     * `select representative with the longest trips term 7`
     * `select representative longest trips term 7`
     * `select rep longest trips term 7`
-* name of representative who took the most expensive trip abroad in the specified term. Examples:
+* name of the representative who took the most expensive trip abroad in the specified term. Examples:
     * `select representative with the most expensive trip term 7`
     * `select representative mexpensive trip term 7`
     * `select rep mexpensive trip term 7`
