@@ -1,8 +1,10 @@
-## Data of members of the Polish Government 
+# Data of members of the Polish Government 
 
 Package provides access to data and basic data analysis of members of the Polish Government using Sejmometr WebAPI: https://mojepanstwo.pl/api/sejmometr
 
-Program displays information based on the command line arguments. List of all available options:
+Program displays information based on the command line arguments. 
+
+## List of all available options:
 * sum of the spending of representative with the specified name. Examples:
     * `select "Jarosław Kaczyński" spendings in 2013`
     * `select "Ewa Żmuda-Trzebiatowska" spendings in 2013`
